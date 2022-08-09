@@ -1,0 +1,22 @@
+{
+  "name": "s8-ims",
+  "version": "1.0.0",
+  "description": "skye8 interns management system",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mulfranck/s8-ims.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mulfranck/s8-ims/issues"
+  },
+  "homepage": "https://github.com/mulfranck/s8-ims#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}
