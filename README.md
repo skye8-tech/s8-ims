@@ -26,7 +26,7 @@ In very page, include the following links into the `<head>` tag.
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
    <!-- user Js and style -->
-   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
    <script src="src/script.js" defer></script>
 ```
 
