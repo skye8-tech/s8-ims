@@ -9,16 +9,23 @@
     <link rel="stylesheet" href="node_modules/bootstrap-5.0.2-dist/css/bootstrap.min.css">
     <!-- User defined stylesheet -->
     <link rel="stylesheet" href="/src/styles.css">
+    <link rel="stylesheet" href="/src/css/landipage.css">
 
     <!-- User script -->
     <script src="script.js" defer></script>
+
+    <!-- Bootstrap JAVASCRIPT -->
+    <script src="node_modules/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
+
 </head>
 <body>
     <!-- This page should be used for the landing page -->
     
-        <nav class="navbar navbar-expand-lg bg-primary"></nav>
+       <nav class="navbar navbar-expand-lg bg-black"></nav>
         <nav class="navbar navbar-expand-lg navbar navbar-light nav-tabs p-3">
-            <h1 class="text-primary font-weight-bolder">SKYE8</h1>
+            <h1 class="text-primary font-weight-bolder">
+                <img src="/logo8.png" class="rounded" alt="logo8">
+            </h1>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -29,17 +36,73 @@
     
                     <a href="#" class="nav-item nav-link bg-primary rounded text-light mx-3">Home</a>
         
-                    <a href="#" class="nav-item nav-link mx-3">Internship</a>
+                    <a href="#" class="nav-item nav-link  mx-3">Internship</a>
         
         
-                    <a href="#" class="nav-item nav-link mx-3">About</a>
+                    <a href="#" class="nav-item nav-link  mx-3">About</a>
         
-                    <a href="#" class="nav-item nav-link mx-3">Contact us</a>
+                    <a href="#" class="nav-item nav-link  mx-3">Contact us</a>
         
                 </div>
         
             </div>
         </nav>
+        <div class="text-lg-center me-2" style="margin: 5%; padding:3%; line-height: 3%; word-spacing: 10%;"><b>
+            Welcome to Skye8 Internship program
 
+        </b>
+
+                     
+                    </div>
+                </div>
+            </div>
+       
+</div>
+       
+        <!-- Button trigger modal -->
+        <div class="text-lg-center"> 
+            
+<button type="button" class="btn  btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+    Log In
+  </button>
+  <button type="button" class="btn1">Apply</button>
+  <!-- Modal -->
+ <div class="modal" style="width: 100%; height: 100%;"  id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog"> 
+      <div class="modal-content" style="margin: 10%; width: 500px; height: 400px;">
+        <div class="modal-header">
+          
+          <div class="text-center">
+            <img src="/logo8.png" class="rounded" alt="logo8">
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <form role="form">
+              <div class="form-group" style="text-align: left;">
+                  <label for="exampleInputEmail">Email address</label>
+                  <input class="form-control" id="exampleInputEmail3" placeholder="Enter email" type="email">
+              </div>
+              <div class="form-group" style="text-align: left;">
+                <label for="exampleInputPassword">Password</label>
+                <input class="form-control" id="exampleInputPassword3" placeholder="Enter Password" type="password">
+            </div>
+        
+          </form>
+        </div>
+        <div class="modal-footer">
+          
+          <button type="submit" class="btn3 btn-primary">Log In</button>
+          <button type="button" class="btn2 btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+       
+    
 </body>
 </html>
