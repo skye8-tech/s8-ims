@@ -1,0 +1,10 @@
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background: linear-gradient(rgba(0, 40, 199, 1), rgb(255, 255, 255, 1));
+    background-repeat: no-repeat;
+}
