@@ -14,9 +14,12 @@
       <span class="navbar-brand h1">Navbar</span>
     </nav>
 
-    <div class="container float-container">
+    <div class="container float-container container-top">
+
+      <h2 class="header mb-3">Required Information</h2>
+
       <form action="">
-        <div class="row ">
+        <div class="row mb-3 ">
           <div class="col-12">
             <div class="form">
               <label for="InputGrid">Name of school</label>
@@ -25,7 +28,7 @@
             </div>
           </div>
         </div>
-        <div class="row g-3">
+        <div class="row g-3 mb-3">
           <div class="col-6">
             <div class="form">
               <label for="InputGrid">Department</label>
@@ -50,13 +53,13 @@
           </div>
         </div>
 
-        <div class="row g-3">
+        <div class="row g-3 mb-3">
           <div class="col-6">
             <div class="form">
               <label for="SelectionGrid">Option</label>
               <select class="form-select"  id="SelectionGrid">
 
-                <option value="1"> placeholder </option>
+                <option value="1">Select field of specialization </option>
                 <option value="2">Software Development</option>
                 <option value="3">Digital Marketing</option>
                 <option value="4">Computer Networking</option>
@@ -71,13 +74,42 @@
         
           <div class="col-6">
             <div class="form">
-              <label for="InputGrid">Attatchment(s)</label>
-              <input type="text" class="form-control" id="InputGrid" placeholder="Add documents">
-            
+              <label for="Attatchment">Attatchment(s)</label>
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="Attatchment">
+               
+              </div>
             </div>
           </div>
           
         </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <div class="form">
+              <label for="InputGrid">Start Date</label>
+              <input type="date" class="form-control" id="InputDate" placeholder="14-08-2022" >
+            
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form">
+              <label for="SelectionGrid">Duration</label>
+              <select class="form-select"  id="SelectionGrid">
+
+                <option value="1">1 Month</option>
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="4">6 Months</option>
+                <option value="4">other</option>
+                
+              </select> 
+            
+            
+            </div>
+          </div>
+        </div>
+        
 
           
       </div>
