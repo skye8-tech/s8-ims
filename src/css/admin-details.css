@@ -1,0 +1,15 @@
+/*************    Navbar Section   *************/
+.navbar-brand img {
+    width: 6rem;
+}
+.logo {
+    width: 6rem;
+}
+.icon {
+    fill: white !important;
+}
+
+.nav-link img {
+    width: 1.4rem;
+}
+
