@@ -14,11 +14,12 @@ body {
 
 .header{
 
-    font-size: medium;
-    color: skyblue;
+    font-size: large;
+    color: #0d6efd;
+    margin-right: auto;
 }
 
 .container-top {
     margin-top: 5vh;
-    border-radius: 10px;
+    border-radius: 20px;
 }
