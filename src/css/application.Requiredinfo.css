@@ -22,10 +22,25 @@ body {
 .container-top {
     margin-top: 5vh;
     border-radius: 20px;
+
+}
+
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .modal-title{
-    margin: auto;
+    margin-left: auto;
     color: #0d6efd;
+    font-size: xx-large;
    
+}
+
+.bi1{
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 30vh;
+    width: 20%;
+    color: rgb(9, 182, 9);
 }
