@@ -23,3 +23,9 @@ body {
     margin-top: 5vh;
     border-radius: 20px;
 }
+
+.modal-title{
+    margin: auto;
+    color: #0d6efd;
+   
+}
