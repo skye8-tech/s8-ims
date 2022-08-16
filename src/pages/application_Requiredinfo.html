@@ -38,8 +38,7 @@
   </nav>
 
 
-    <div class="container float-container container-top">
-     
+    <div class="container float-container container-top shadow-sm p-3 mb-5 bg-body roundedgit">
       <form action="">
         <div class="content">
           <br><br><h2 class="header mb-3">Required Information</h2><br>  <!--header-->
@@ -48,7 +47,7 @@
             <div class="col-12">
               <div class="form">
                 <label for="InputGrid">Name of school</label>
-                <input type="email" class="form-control" id="InputGrid" placeholder="Enter name of school" >
+                <input type="text" class="form-control" id="InputGrid" placeholder="Enter name of school" required >
               
               </div>
             </div>
@@ -59,7 +58,7 @@
             <div class="col-6">
               <div class="form">
                 <label for="InputGrid">Department</label>
-                <input type="text" class="form-control" id="InputGrid" placeholder="Enter Department" >
+                <input type="text" class="form-control" id="InputGrid" placeholder="Enter Department" required>
               
               </div>
             </div>
@@ -158,7 +157,7 @@
             </button>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="submit" class="btn btn-primary mb-5" data-toggle="modal" data-bs-target="#staticBackdrop">
               Submit
             </button>
 

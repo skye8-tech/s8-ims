@@ -17,10 +17,9 @@ body {
 }
 
 .header{
-
-    font-size: large;
     color: #0d6efd;
     margin-right: auto;
+    font-size: x-large;
 }
 
 .content{
