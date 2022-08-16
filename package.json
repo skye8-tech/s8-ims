@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/mulfranck/s8-ims#readme",
   "dependencies": {
-    "bootstrap": "^5.2.0",
-    "bootstrap-icons": "^1.9.1"
+    "bootstrap": "^5.2.0"
   }
 }
