@@ -5,3 +5,9 @@
     background-color: #fafafa;
 
 }
+
+body{
+    height: 100vh;
+    background: linear-gradient(#0d6efd 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+}
