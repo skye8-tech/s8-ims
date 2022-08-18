@@ -1,0 +1,12 @@
+.full-page{
+    height: calc(100vh - 52px);
+}
+.ip-logbook-fullpage{
+    height: 85vh;
+}
+.fk-img{
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background-color: rgb(65, 141, 160);
+}
