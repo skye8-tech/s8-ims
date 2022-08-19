@@ -17,10 +17,11 @@
      <!--Link to CSS-->
     <link rel="stylesheet" href="/src/css/application.Requiredinfo.css">
 
-    <link rel="script" href="/src/script.js">
+   
     
 </head>
 <body>
+
 
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
@@ -40,16 +41,17 @@
 
 
     <div class="container float-container container-top shadow-sm p-3 mb-5 bg-body roundedgit">
-      <form action="">
+      <form id="regform" action="" class="needs-validation" novalidate>
         <div class="content">
           <br><br><h2 class="header mb-3">Required Information</h2><br>  <!--header-->
             <!--field to input name of school-->
           <div class="row mb-3 ">
             <div class="col-12">
-              <div class="form">
+              <div class="form-group">
                 <label for="school">Name of school</label>
                 <input type="text" class="form-control" id="school" placeholder="Enter name of school">
-                
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please enter name of school.</div>
               </div>
             </div>
           </div>
@@ -57,10 +59,12 @@
           <!-- Department -->
           <div class="row g-3 mb-3">
             <div class="col-6">
-              <div class="form">
+              <div class="form-group">
                 <label for="department">Department</label>
                 <input type="text" class="form-control" id="department" placeholder="Enter Department">
-              
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please fill out this field.</div>
+                
               </div>
             </div>
 
@@ -104,11 +108,12 @@
 
             <!--Field for Attatment files -->
             <div class="col-6">
-              <div class="form">
+              <div class="form-group">
                 <label for="attatchment">Attatchment(s)</label>
                 <div class="input-group mb-3">
                   <input type="file" class="form-control" id="attatchment">
-                
+                  <div class="valid-feedback">Valid.</div>
+                  <div class="invalid-feedback">Please choose file.</div>
                 </div>
               </div>
             </div>
@@ -118,9 +123,11 @@
           <!-- Field to Input start date -->
           <div class="row g-3 mb-3">
             <div class="col-6">
-              <div class="form">
+              <div class="form-group">
                 <label for="date">Start Date</label>
                 <input type="date" class="form-control" id="date" placeholder="14-08-2022">
+                <div class="valid-feedback">Valid.</div>
+                <div class="invalid-feedback">Please enter valid date.</div>
               
               </div>
             </div>
@@ -142,8 +149,10 @@
 
           <!--Terms and conditions-->
           <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="check">
             <label class="form-check-label" for="check">
+              <input class="form-check-input" type="checkbox" value="" id="check">
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">You must agree before submitting.</div>
               Agree to terms and conditions
             </label>
           </div>
@@ -158,7 +167,7 @@
             </button>
 
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="submit" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               Submit
             </button>
             
@@ -198,5 +207,9 @@
        
          
     </div>
+   
+    
+    <script src="../script.js"></script>
+
 </body>
 </html>
