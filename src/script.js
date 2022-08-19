@@ -6,4 +6,3 @@ regform.addEventListener('submit', function(){
     console.log('submitting')
 })
 
-function sum(a, b){}
