@@ -1,8 +1,10 @@
-// Disable form submissions if there are invalid fields
 
+
+    // Disable form submissions if there are invalid fields
 const regform = document.getElementById('regform')
-console.log(regform)
-regform.addEventListener('submit', function(){
-    console.log('submitting')
+regform.addEventListener('submit', function(e){
+    let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
+    e.preventDefault();
+    myModal.toggle();
+    
 })
-
