@@ -1,0 +1,14 @@
+.task{
+background-color: aliceblue;
+margin-left: 5%;
+}
+.review{
+    height: 15vh;
+    width: 100%;
+    border-radius: 5%;
+}
+.image{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
