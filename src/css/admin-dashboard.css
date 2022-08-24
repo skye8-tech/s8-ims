@@ -11,3 +11,48 @@
 .profile-width {
     width: 50px;
 }
+
+.admin-main {
+    background-color: #f0f8ff;
+}
+
+.aside {
+    background-color: #fafafa !important;
+}
+
+h1, h2, h4, h5, p {
+    color: #212121 !important;
+}
+
+a.user-link {
+    color: #212121;
+    text-decoration: none;
+    transition: all linear;
+}
+
+.user-link:hover {
+    color: #0d6dfd70;
+    padding-bottom: 1.5px;
+    border-bottom: 1px solid #0074d955;
+    transition-duration: .3s;
+}
+
+hr {
+    margin: 1rem auto 1rem;
+    width: 50%;
+    border: 1 linear-gradient(#0059ffe3, #0059ffe3);
+    border-radius: 20px;
+}
+
+.align-admins {
+    text-align: center;
+}
+.p-sm {
+    font-size: .8rem;
+}
+
+/* body{
+    height: 100vh;
+    background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+} */
