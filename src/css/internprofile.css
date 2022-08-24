@@ -5,8 +5,17 @@
     height: 85vh;
 }
 .fk-img{
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     background-color: rgb(65, 141, 160);
+}
+.dropdown-menu{
+    width: 2;
+}
+.image{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
 }
