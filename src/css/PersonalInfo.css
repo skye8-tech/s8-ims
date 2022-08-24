@@ -1,0 +1,28 @@
+.container{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fafafa;
+
+}
+.container-top {
+    margin-top: 5vh;
+    border-radius: 20px;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(#0d6efd 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+}
+
+.header{
+    color: #0d6efd;
+    margin-right: auto;
+    font-size: x-large;
+}
+
+.content{
+    margin-left: 10%;
+    margin-right: 10%;
+}
