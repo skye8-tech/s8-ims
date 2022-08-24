@@ -1,4 +1,5 @@
 
+'use strict'
 
     // Modal activation after validation
 const regform = document.getElementById('regform')
@@ -8,3 +9,6 @@ regform.addEventListener('submit', function(e){
     myModal.toggle();
     
 })
+
+
+

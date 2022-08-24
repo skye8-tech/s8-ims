@@ -1,116 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intern Management System | Skye8</title>
-      <!-- bootstrap CDN for style and script --->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Intern Management System | Skye8</title>
+          <!-- bootstrap CDN for style and script --->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-    <!-- Bootstrap Css -->
-    <link rel="stylesheet" href="node_modules/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <!-- User defined stylesheet -->
-    <link rel="stylesheet" href="src/css/styles.css">
-    <link rel="stylesheet" href="src/css/landipage.css">
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="node_modules/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+        <!-- User defined stylesheet -->
+        <link rel="stylesheet" href="src/css/styles.css">
+        <link rel="stylesheet" href="src/css/landipage.css">
 
 
-    <!-- Bootstrap JAVASCRIPT -->
-    <script src="node_modules/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
+        <!-- Bootstrap JAVASCRIPT -->
+        <script src="node_modules/bootstrap-5.0.2-dist/js/bootstrap.min.js" defer></script>
 
-</head>
+    </head>
 
-<body>
-    <!-- This page should be used for the landing page -->
-    <div class="modal modal-xlg w-100 h-100" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-g" role="document"> 
-        <div class="modal-content">
-          <div class="modal-header">
-            
-            <div class="te">
-              <img src="assets/images/logo.png" class="rounded" alt="logo8">
-            </div>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-  
-            <form role="form">
-                <div class="form-group" style="text-align: left;">
-                    <label for="exampleInputEmail">Email address</label>
-                    <input class="form-control" id="exampleInputEmail3" placeholder="Enter email" type="email">
+    <body>
+      <!-- This page should be used for the landing page -->
+        <div class="modal modal-xlg w-100 h-100" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-g" role="document"> 
+            <div class="modal-content">
+              <div class="modal-header">
+                
+                <div class="te">
+                  <a href=""><img src="assets/images/logo.png" class="rounded" alt="logo8"></a>
                 </div>
-                <div class="form-group" style="text-align: left;">
-                  <label for="exampleInputPassword">Password</label>
-                  <input class="form-control" id="exampleInputPassword3" placeholder="Enter Password" type="password">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  
+                </button>
               </div>
-          
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="button" aria-pressed="true">Log In</button>
-            <button type="button" class="btn2 btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+              <div class="modal-body">
+      
+                <form role="form">
+                  <div class="container mt-3">
+                    <h3>Form Validation</h3>
+                    <p>Try to submit the form.</p>
+                      
+                    <form action="script.js" class="was-validated">
+                      <div class="mb-3 mt-3">
+                        <label for="Email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="myCheck"  name="remember" required>
+                        <label class="form-check-label" for="myCheck">I agree.</label>
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary btn-lg">Log In</button>
+                        <button type="button" class="btn2 btn-secondary btn-lg" data-bs-dismiss="modal">Close</button>
+                      </div>
+                    </form>
+                  </div> 
+              
+                </form>
+              </div>
+            
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    
-       <nav class="navbar navbar-expand-lg bg-black"></nav>
-        <nav class="navbar navbar-expand-lg navbar navbar-light nav-tabs p-3">
-            <h1 class="text-primary font-weight-bolder">
-                <img src="assets/images/logo.png" class="rounded" alt="logo8">
-            </h1>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
-    
-                <div class="navbar-nav">
-    
-                    <a href="#" class="nav-item nav-link bg-primary rounded text-light mx-3">Home</a>
-        
-                    <a href="#" class="nav-item nav-link  mx-3">Internship</a>
         
         
-                    <a href="#" class="nav-item nav-link  mx-3">About</a>
+          <nav class="navbar navbar-expand-lg bg-primary"></nav>
+            <nav class="navbar navbar-expand-lg navbar navbar-light nav-tabs p-3 bg-primary">
+                <h1 class="text-primary font-weight-bolder">
+                    <img src="assets/images/logo8.png" class="rounded" alt="logo8">
+                </h1>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="navbar-collapse collapse justify-content-end" id="navbarCollapse">
         
-                    <a href="#" class="nav-item nav-link  mx-3">Contact us</a>
+                    <div class="navbar-nav">
+                      
         
+                        <a href="index.html" class="nav-item nav-link bg-primary rounded text-light mx-3">Home</a>
+            
+                        <a href="#" class="nav-item nav-link  mx-3">Internship</a>
+            
+            
+                        <a href="Skye8.tech" class="nav-item nav-link  mx-3">About</a>
+            
+                        <a href="#" class="nav-item nav-link  mx-3">Contact us</a>
+            
+                    </div>
+            
                 </div>
-        
+            </nav>
+            <div class="text-xl-center" style="margin-top: 15%;">
+              <h1>
+                Welcome to Skye8 Internship program
+                                                    
+              </h1>
+              
             </div>
-        </nav>
-        <div class="text-xl-center fs-5 mt-5 mb-5 me-5 ">
-          <h1>
-            Welcome to Skye8 Internship program
+                    </div>
+                </div>
 
-        </h1>
           
-         </div>
-                </div>
-            </div>
-       
-</div>
- 
+    </div>
+          
+            <!-- Button trigger modal -->
+            <div class="text-lg-center" style="margin-top: 16%;"> 
+                <button type="button" class="btn  btn-primary active btn-lg  col-lg-1 margin-left" data-bs-toggle="modal" data-bs-target="#exampleModal">
 
-        <!-- Button trigger modal -->
-        <div class="text-lg-center"> 
-            <button type="button" class="btn  btn-primary btn-lg  col-lg-1 margin-left" data-bs-toggle="modal" data-bs-target="#exampleModal">
-
-              Log In
-            </button>
-            <button type="button " class="btn btn-secondary btn-lg col-lg-1 margin-right">Apply</button>
-          </div>
+                  Log In
+                </button>
+                <!-- <button type="button " class="btn btn-secondary btn-lg col-lg-1 margin-right">Apply  -->
+                  <a href="src/pages/application_Requiredinfo.html" class="btn btn-secondary btn-lg col-lg-1 me-5 ms-5">Application</a>
+                <!-- </button> -->
+      <!-- Modal -->
+              </div>
 
 
-         
-    
-</body>
+              <!-- User script -->
+        <script src="script.js"></script>
+        
+    </body>
+    </html>
 
-<!-- User script -->
-    <script src="script.js"></script>
-    
-</html>
