@@ -3,3 +3,4 @@ node_modules
 
 # system files
 .vscode
+api*

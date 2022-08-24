@@ -1,0 +1,43 @@
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+.text-color {
+    background-color: floralwhite;
+}
+
+/*************    Navbar Section   *************/
+.navbar-brand img {
+    width: 6rem;
+}
+.logo {
+    width: 6rem;
+}
+.icon {
+    fill: white !important;
+}
+
+.nav-link img {
+    width: 1.4rem;
+}
+
+
+/*************    Main Section   *************/
+
+/*************    Side Archive   *************/
+
+.id-full-screen {
+    height: calc(100vh - 74px);
+}
+
+.id-archive button:hover {
+    background-color: floralwhite;
+}
+
+.id-active {
+    background-color: floralwhite !important;
+    width: 120%;
+}
+
+/*************    Board Section   *************/
+.id-board {
+    height: 92%;
+}
