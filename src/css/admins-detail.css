@@ -1,0 +1,60 @@
+@import url("../../node_modules/bootstrap-icons/font/bootstrap-icons.css");
+
+.text-color {
+    background-color: floralwhite;
+}
+
+/*************    Navbar Section   *************/
+.navbar-brand img {
+    width: 6rem;
+}
+.logo {
+    width: 6rem;
+}
+.icon {
+    fill: white !important;
+}
+
+.nav-link img {
+    width: 1.4rem;
+}
+
+
+/*************    Main Section   *************/
+
+/*************    Side Archive   *************/
+
+.id-full-screen {
+    height: calc(100vh - 74px);
+}
+
+.id-archive button:hover {
+    background-color: #FFFAF0;
+}
+
+.id-active {
+    background-color: #FFFAF0 !important;
+    width: 120%;
+}
+
+/*************    Board Section   *************/
+.id-board {
+    height: 93.6%;
+}
+
+
+
+.profile .profile-bg {
+        bottom: calc(2rem / 2);
+        top: calc(7rem / 2);
+    background-color: #FFFAF0 !important;
+    
+    z-index: 1;
+}
+.profile .profile-content {
+    z-index: 2;
+}
+
+.expiration {
+    background-color: #FFFAF0;
+}
