@@ -1,3 +1,4 @@
+
 'use strict'
 
 const $weekBtn = document.querySelector('.id-archive');
@@ -10,5 +11,15 @@ const clickWeekHandler = (e) => {
     $weekTitle.textContent = e.target.textContent;
     $currentWeek = e.target; // keep track of the current element.
 }
-
 $weekBtn.addEventListener('click', e => {clickWeekHandler(e)})
+
+
+// Modal activation after validation
+const regform = document.getElementById('regform')
+regform.addEventListener('submit', function(e){
+    let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
+    e.preventDefault();
+    myModal.toggle();
+    
+})
+
