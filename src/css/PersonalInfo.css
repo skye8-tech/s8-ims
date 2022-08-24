@@ -26,3 +26,23 @@ body {
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.bi1{
+    margin-left: 40%;
+    margin-right: 40%;
+    height: 30vh;
+    width: 20%;
+    color: rgb(9, 182, 9);
+}
+
+.navbar{
+    height: 10vh;
+    width: 100%;
+
+}
+
+.navbar-brand{
+    height: 20vh;
+    width: 10%;
+    margin-top: 5%;
+}
