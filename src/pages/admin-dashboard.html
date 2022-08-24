@@ -59,8 +59,8 @@
 
     <section id="main">
       <div class="container-fluid admin-main">
-        <div class="row">
-          <div class="col-md-8">
+        <div class="row row-cols-2 d-flex justify-content-between align-items-start">
+          <div class="col-8">
 
             <div class="panel panel-default">
               <div class="panel-heading">
@@ -167,10 +167,195 @@
             </div>
 
           </div>
-          <div class="col-md-4 aside">
-            <div>
-              <h1></h1>
-            </div>      
+          <div class="col-4 aside">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="card" id="list1">
+                      <div class="card-body">
+            
+                        <h4 class="text-center text-primary">
+                          <u>Task List</u>
+                        </h4>
+            
+                        <div class="pb-2">
+                          <div class="card">
+                            <div class="card-body p-2">
+                              <div class="d-flex align-items-center">
+                                <input type="text" class="form-control n-border" id="exampleFormControlInput1"
+                                  placeholder="Add new...">
+                                <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
+                                    class="bi-calendar-fill bi-md ms-2 me-4"></i></a>
+                                <div>
+                                  <button type="button" class="btn btn-primary">Add</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+            
+                        <div class="d-flex justify-content-evenly align-items-center my-4 flex-shrink-1">
+                          <p class="small mb-0 me-2 text-muted">Filter</p>
+                          <select class="select">
+                            <option value="1">All</option>
+                            <option value="2">Completed</option>
+                            <option value="3">Active</option>
+                            <option value="4">Has due date</option>
+                          </select>
+                          <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
+                          <select class="select">
+                            <option value="1">Added date</option>
+                            <option value="2">Due date</option>
+                          </select>
+                          <a href="#!" data-mdb-toggle="tooltip" title="Ascending"><i
+                              class="bi bi-sort-alpha-down ms-2"></i></a>
+                        </div>
+            
+                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
+                          <li
+                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                            <div class="form-check">
+                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                                aria-label="..." />
+                            </div>
+                          </li>
+                          <li
+                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
+                            <p class="lead mb-0">Buy groceries for next week</p>
+                          </li>
+                          <li class="list-group-item rounded-0 border-0 bg-transparent">
+                            <div class="d-flex flex-row justify-content-end mb-1">
+                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                  class="bi bi-pencil-fill me-3"></i></a>
+                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                  class="bi bi-trash-fill"></i></a>
+                            </div>
+                            <div class="text-end text-muted">
+                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                <p class="small mb-0">28/06/22</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
+                          <li
+                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                            <div class="form-check">
+                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                                aria-label="..." />
+                            </div>
+                          </li>
+                          <li
+                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
+                            <p class="lead mb-0">Buy groceries for next week</p>
+                          </li>
+                          <li class="list-group-item rounded-0 border-0 bg-transparent">
+                            <div class="d-flex flex-row justify-content-end mb-1">
+                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                  class="bi bi-pencil-fill me-3"></i></a>
+                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                  class="bi bi-trash-fill"></i></a>
+                            </div>
+                            <div class="text-end text-muted">
+                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                <p class="small mb-0">28/06/22</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
+                          <li
+                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
+                            <div class="form-check">
+                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
+                                aria-label="..." />
+                            </div>
+                          </li>
+                          <li
+                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
+                            <p class="lead mb-0">Buy groceries for next week</p>
+                          </li>
+                          <li class="list-group-item rounded-0 border-0 bg-transparent">
+                            <div class="d-flex flex-row justify-content-end mb-1">
+                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                  class="bi bi-pencil-fill me-3"></i></a>
+                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                  class="bi bi-trash-fill"></i></a>
+                            </div>
+                            <div class="text-end text-muted">
+                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                <p class="small mb-0">28/06/22</p>
+                              </a>
+                            </div>
+                          </li>
+                        </ul>
+            
+                      </div>
+                    </div>
+                </div>
+                <!-- <div class="mt-4">
+              
+                      <div class="card admin-main" >
+                        <div class="card-body p-4">
+              
+                          <h6 class="panel-title text-center mb-2">Task List</h6>
+              
+                          <form class="d-flex justify-content-center align-items-center mb-4">
+                            <div class="form-outline flex-fill">
+                              <input type="text" id="form3" class="form-control form-control-md" placeholder="add new task"/>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-md ms-2">Add</button>
+                          </form>
+              
+                          <ul class="list-group mb-0">
+                            <li
+                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+                              <div class="d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                <s>Dapibus ac facilisis in</s>
+                              </div>
+                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                <i class="bi bi-x text-primary"></i>
+                              </a>
+                            </li>
+                            <li
+                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+                              <div class="d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                Morbi leo risus
+                              </div>
+                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                <i class="bi bi-x text-primary"></i>
+                              </a>
+                            </li>
+                            <li
+                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+                              <div class="d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
+                                Porta ac consectetur ac
+                              </div>
+                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                <i class="bi bi-x text-primary"></i>
+                              </a>
+                            </li>
+                            <li
+                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-0">
+                              <div class="d-flex align-items-center">
+                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
+                                Vestibulum at eros
+                              </div>
+                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
+                                <i class="bi bi-x text-primary"></i>
+                              </a>
+                            </li>
+                          </ul>
+              
+                        </div>
+                      </div>
+                      <hr class="mx-auto">
+                      
+                </div>      -->
+
+
+
           </div>
         </div>
       </div>

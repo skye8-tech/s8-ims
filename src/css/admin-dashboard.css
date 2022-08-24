@@ -51,8 +51,10 @@ hr {
     font-size: .8rem;
 }
 
-/* body{
-    height: 100vh;
-    background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
-    background-repeat: no-repeat;
+/* .bg-transparent {
+    background-color: #f0f8ff !important;
 } */
+
+.n-border{
+    border: none;
+}
