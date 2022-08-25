@@ -16,8 +16,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
      -->
     <!-- Offline Usage -->
-    <link rel="stylesheet" href="../css/admin-detail.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../css/admins-detail.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
 </head>
 <body>
@@ -69,10 +70,10 @@
         <section class="row h-100">
             <section class="col-md-2 col-12 d-flex flex-md-column flex-wrap align-content-center justify-content-between" >
                 <section class="id-archive-top w-100">
-                    <article class="back-btn text-md-center my-4">
-                        <button class="btn btn-primary">
+                    <article class="back-btn text-md-center my-3">
+                        <a role="button" href="./admin-dashboard.html" class="btn btn-primary">
                             <span class="bi bi-arrow-left-short"></span> Back
-                        </button>
+                        </a>
                     </article>
                     <article class="id-archive d-md-flex flex-column">
                         <button class="week-item btn py-3 border-dark border-opacity-25 border-0 rounded-0 border-bottom">Week 1</button>
@@ -87,8 +88,10 @@
                     </button>
                 </article>
             </section>
+
+            
             <article class="col-md-7 col-12 g-0">
-                <section class="container-md id-board mt-4 text-color rounded-2">
+                <section class="container-md id-board mt-3 text-color rounded-2">
                     <header class="row">
                             <h3 class="display-5" id="Week-title">Week 1</h3>
                         </div>
@@ -118,7 +121,45 @@
                     </section>
                 </section>
             </article>
-            <article class="col-md-3 col-12"></article>
+            
+            <article class="col-md-3 col-12">
+                <div class=" h-100">
+                    <div class="py-2"></div>
+                    <div class="profile position-relative mx-1">
+                        <div class="profile-bg position-absolute start-0 end-0 "></div>
+                        <div class="profile-content d-flex flex-column align-items-center position-relative">
+                            <div class="">
+                                <img src="/assets/images/niga-profile.png" class="rounded-circle" alt="username">
+                            </div>
+                            <h3 class="h3 mt-1 mb-0">
+                                <a href="#" class="link-dark text-decoration-none title">username</a>
+                            </h3>
+                            <p class="">
+                                <a href="#" class="link-dark text-decoration-none" target="_blank" rel="noopener noreferrer">intern
+                                    department</a>
+                            </p>
+                            <div class="mt-2 mx-1 text-center">
+                                <h4 class="h4 mb-1">About</h4>
+                                <p class="">
+                                    Horem ipsum dolor sit amet consectetur adipisicing elit. Sit, corporis. Quis, autem!
+                                </p>
+            
+                                <button class="btn btn-primary">Assign task</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-2"></div>
+                    <div class="expiration mt-md-3 d-flex flex-column align-items-center py-4 rounded-3 position-relative">
+                        <h5 class="h5 border-bottom border-dark border-opacity-10">Account Expiration</h5>
+                        <p class="fs-3 lead"> 26 Days left</p>
+
+                        <div class="account-state w-100 d-flex justify-content-evenly ">
+                            <button class="btn btn-success">Extend</button>
+                            <button class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>    
+                </div>
+            </article>
         </section>
     </main>
 
