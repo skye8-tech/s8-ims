@@ -1,0 +1,29 @@
+.img-home {
+    max-width: 4rem;
+}
+
+.img-width-brand {
+    width: 6rem !important;
+}
+
+.dropdown-menu {
+    left: 50%;
+    transform: translateX(-50%) !important;
+    right: 100% !important;
+}
+
+.img-body{
+    max-width: 8rem;
+}
+
+.alignment {
+    text-align: center;
+}
+
+.task{
+    text-align: center;
+}
+
+.form-check{
+    align-content: center;
+}

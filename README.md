@@ -28,6 +28,8 @@ In very page, include the following links into the `<head>` tag.
    <!-- user Js and style -->
    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
    <script src="src/script.js" defer></script>
+
+   Happy Coding!!!
 ```
 
 ### Separation of concern

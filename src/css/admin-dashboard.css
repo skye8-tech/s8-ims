@@ -9,7 +9,7 @@
 }
 
 .profile-width {
-    width: 2.5rem;
+    width: 40px;
 }
 
 .admin-main {
@@ -46,25 +46,15 @@ hr {
     text-align: center;
 }
 .p-sm {
-    font-size: 1rem;
+    font-size: .8rem;
 }
+
 .size-img{
-    width: 5rem !important;
+    width: 8rem;
 }
 
-.full-screen-h-w{
-    height: calc(100vh - 66px);
-}
-
-.n-border{
-    border: none;
-}
-
-.over-flow-left{
-    overflow-y: scroll;
-    height: calc(100vh - 66px);
-}
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
-}
+/* body{
+    height: 100vh;
+    background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+} */
