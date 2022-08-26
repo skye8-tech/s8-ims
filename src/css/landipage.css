@@ -8,3 +8,9 @@ body{
     margin-top:50px;
     margin-bottom: 10px;
 }
+.logo{
+    width: 9rem;
+}
+.nav-item{
+    font-size: 1.5rem ;
+}
