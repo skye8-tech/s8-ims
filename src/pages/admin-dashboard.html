@@ -57,309 +57,225 @@
 
   <!-- The Admins Main Section -->
 
-    <section id="main">
+    <section id="main" class="full-screen-h-w">
       <div class="container-fluid admin-main">
-        <div class="row row-cols-2 d-flex justify-content-between align-items-start">
-          <div class="col-8">
-
-            <div class="panel panel-default">
-              <div class="panel-heading">
-                <h3 class="panel-title text-center my-3">Supervisors</h3>
-              </div>
-
-                <div class="panel-body row g-4">
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 1</a></p>
-                    </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 2</a></p>
-                    </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 3</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 4</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 4</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Supervisor 4</a></p>
-                    </div>
+        <div class="d-flex-column d-sm-flex align-items-start">
+          <div class="col-12 col-sm-7">
+            <div class="container-fluid px-5 over-flow-left">
+              <div>
+                <div>
+                  <h3 class="text-center my-4">Supervisors</h3>
                 </div>
-                
-              <hr>
 
-              <div class="panel-heading">
-                <h3 class="panel-title text-center my-3">Interns</h3>
-              </div>
-
-              <div class="panel-heading">
-                <h5 class="panel-title my-3">Software Engineers</h5>
-              </div>
-
-                <div class="panel-body row g-4">
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Software 1</a></p>
-                    </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Software 2</a></p>
-                    </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Software 3</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Software 4</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Software 4</a></p>
-                    </div>
-                    <div class="col-2 align-admins">
-                      <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                      <p class="p-sm card-link"><a href="#" class="user-link">Software 4</a></p>
-                    </div>
-                </div>
-                
-                <div class="panel-heading">
-                  <h5 class="panel-title my-3">Digital Marketers</h5>
-                </div>
-  
-                  <div class="panel-body row g-4">
-                        <div class="col-2 align-admins">
-                          <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                          <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 1</a></p>
-                      </div>
-                        <div class="col-2 align-admins">
-                          <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                          <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 2</a></p>
-                      </div>
-                        <div class="col-2 align-admins">
-                          <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                          <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 3</a></p>
-                      </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 4</a></p>
-                      </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 4</a></p>
-                      </div>
-                      <div class="col-2 align-admins">
-                        <img src="https://picsum.photos/200" class="rounded-circle img-fluid ">
-                        <p class="p-sm card-link"><a href="#" class="user-link">Digital Marketers 4</a></p>
-                      </div>
+                  <div class="d-flex gap-4 flex-wrap" id="supervisors">
+                    <template id="user-card">
+                        <img id="user-img" class="rounded-circle size-img">
+                        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+                    </template>
                   </div>
+              </div>
+              <div>
+                <div>
+                  <h3 class="text-center my-4">Interns</h3>
+                </div>
 
-              <hr>
+                <div>
+                  <h5 class="my-4">Software Engineers</h5>
+                </div>
 
-            </div>
-
+                  <div class="d-flex gap-4 flex-wrap" id="internsSw">
+                        <template id="sw-card">
+                          <div class="col-2 align-admins sw-div">
+                            <img id="sw-img" class="rounded-circle size-img">
+                            <a href="#" class="user-link d-flex justify-content-center" id="sw-link"></a>
+                          </div>
+                        </template>
+                  </div>
+                  
+                  <div>
+                    <h5 class="my-4">Digital Marketers</h5>
+                  </div>
+    
+                  <div class="d-flex gap-4 flex-wrap" id="internsDm">
+                      <template id="dm-card">
+                        <div class="col-2 align-admins dm-div">
+                          <img id="dm-img" class="rounded-circle size-img">
+                          <a href="#" class="user-link d-flex justify-content-center" id="dm-link"></a>
+                        </div>
+                      </template>
+                  </div>
+              </div>
           </div>
-          <div class="col-4 aside">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="card" id="list1">
-                      <div class="card-body">
+          </div>
+          <div class="container-fluid col-12 col-sm-5 bg-white p-0">
+            <div class="container-fluid py-3">
+                    <div class="border-0" id="list1">
+                      <div class="admin-main shadow-lg p-2 p-sm-3">
             
-                        <h4 class="text-center text-primary">
-                          <u>Task List</u>
-                        </h4>
+                        <h4 class="text-center text-outline-primary mb-3">Task List</h4>
             
-                        <div class="pb-2">
-                          <div class="card">
-                            <div class="card-body p-2">
+                          <div class="d-sm-flex justify-content-center align-items-center mb-2">
+                                  <input type="text" class="form-control border-0" id="taskInput"
+                                  placeholder="Add new task...">
+                                  <div class="d-flex justify-content-end gap-2 gap-sm-0 mt-2 mt-sm-0 align-items-center">
+                                    <a href="#" data-mdb-toggle="tooltip" title="Set due date"><i
+                                      class="bi-calendar-fill bi-md me-sm-3 p-2"></i></a>
+                                    <button type="button" class="btn btn-sm btn-primary" onclick="newTask()">Add</button>
+                                  </div>
+                          </div>
+            
+                        <div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div id="myTaskList" class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
                               <div class="d-flex align-items-center">
-                                <input type="text" class="form-control n-border" id="exampleFormControlInput1"
-                                  placeholder="Add new...">
-                                <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
-                                    class="bi-calendar-fill bi-md ms-2 me-4"></i></a>
-                                <div>
-                                  <button type="button" class="btn btn-primary">Add</button>
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" id="checkTask" checked/>
                                 </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
+                              <div class="d-flex align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1"
+                                      aria-label="..." checked/>
+                                </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
+                              <div class="d-flex align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1"
+                                      aria-label="..." checked/>
+                                </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
+                              <div class="d-flex align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1"
+                                      aria-label="..." checked/>
+                                </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
+                              <div class="d-flex align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1"
+                                      aria-label="..." checked/>
+                                </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-1 bg-transparent shadow-sm mb-3">
+                            <div class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
+                              <div class="d-flex align-items-center">
+                                <div class="">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1"
+                                      aria-label="..." checked/>
+                                </div>
+                                <div class="border-0 bg-transparent mx-3 mb-3 mb-lg-0">
+                                  <p class="my-0">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                </div>
+                              </div>
+                              <div class="bg-transparent d-flex justify-content-evenly align-items-center">
+                                  <a href="#" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
+                                      class="bi bi-pencil-fill"></i></a>
+                                  <a href="#" class="text-danger mx-4" data-mdb-toggle="tooltip" title="Delete todo"><i
+                                      class="bi bi-trash-fill"></i></a>
+                                  <a href="#" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
+                                    <p class="text-end text-muted small mb-0">28/06/22</p>
+                                  </a>
                               </div>
                             </div>
                           </div>
                         </div>
             
-                        <div class="d-flex justify-content-evenly align-items-center my-4 flex-shrink-1">
-                          <p class="small mb-0 me-2 text-muted">Filter</p>
-                          <select class="select">
-                            <option value="1">All</option>
-                            <option value="2">Completed</option>
-                            <option value="3">Active</option>
-                            <option value="4">Has due date</option>
-                          </select>
-                          <p class="small mb-0 ms-4 me-2 text-muted">Sort</p>
-                          <select class="select">
-                            <option value="1">Added date</option>
-                            <option value="2">Due date</option>
-                          </select>
-                          <a href="#!" data-mdb-toggle="tooltip" title="Ascending"><i
-                              class="bi bi-sort-alpha-down ms-2"></i></a>
-                        </div>
-            
-                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                          <li
-                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                            <div class="form-check">
-                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
-                                aria-label="..." />
-                            </div>
-                          </li>
-                          <li
-                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
-                            <p class="lead mb-0">Buy groceries for next week</p>
-                          </li>
-                          <li class="list-group-item rounded-0 border-0 bg-transparent">
-                            <div class="d-flex flex-row justify-content-end mb-1">
-                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
-                                  class="bi bi-pencil-fill me-3"></i></a>
-                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                                  class="bi bi-trash-fill"></i></a>
-                            </div>
-                            <div class="text-end text-muted">
-                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                                <p class="small mb-0">28/06/22</p>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                          <li
-                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                            <div class="form-check">
-                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
-                                aria-label="..." />
-                            </div>
-                          </li>
-                          <li
-                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
-                            <p class="lead mb-0">Buy groceries for next week</p>
-                          </li>
-                          <li class="list-group-item rounded-0 border-0 bg-transparent">
-                            <div class="d-flex flex-row justify-content-end mb-1">
-                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
-                                  class="bi bi-pencil-fill me-3"></i></a>
-                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                                  class="bi bi-trash-fill"></i></a>
-                            </div>
-                            <div class="text-end text-muted">
-                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                                <p class="small mb-0">28/06/22</p>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-                        <ul class="list-group list-group-horizontal rounded-0 bg-transparent">
-                          <li
-                            class="list-group-item d-flex align-items-center ps-0 pe-0 py-1 rounded-0 border-0 bg-transparent">
-                            <div class="form-check">
-                              <input class="form-check-input me-0" type="checkbox" value="" id="flexCheckChecked1"
-                                aria-label="..." />
-                            </div>
-                          </li>
-                          <li
-                            class="list-group-item d-flex align-items-center flex-grow-0 border-0 bg-transparent">
-                            <p class="lead mb-0">Buy groceries for next week</p>
-                          </li>
-                          <li class="list-group-item rounded-0 border-0 bg-transparent">
-                            <div class="d-flex flex-row justify-content-end mb-1">
-                              <a href="#!" class="text-info" data-mdb-toggle="tooltip" title="Edit todo"><i
-                                  class="bi bi-pencil-fill me-3"></i></a>
-                              <a href="#!" class="text-danger" data-mdb-toggle="tooltip" title="Delete todo"><i
-                                  class="bi bi-trash-fill"></i></a>
-                            </div>
-                            <div class="text-end text-muted">
-                              <a href="#!" class="text-muted" data-mdb-toggle="tooltip" title="Created date">
-                                <p class="small mb-0">28/06/22</p>
-                              </a>
-                            </div>
-                          </li>
-                        </ul>
-            
                       </div>
                     </div>
-                </div>
-                <!-- <div class="mt-4">
-              
-                      <div class="card admin-main" >
-                        <div class="card-body p-4">
-              
-                          <h6 class="panel-title text-center mb-2">Task List</h6>
-              
-                          <form class="d-flex justify-content-center align-items-center mb-4">
-                            <div class="form-outline flex-fill">
-                              <input type="text" id="form3" class="form-control form-control-md" placeholder="add new task"/>
-                            </div>
-                            <button type="submit" class="btn btn-primary btn-md ms-2">Add</button>
-                          </form>
-              
-                          <ul class="list-group mb-0">
-                            <li
-                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                              <div class="d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                                <s>Dapibus ac facilisis in</s>
-                              </div>
-                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                                <i class="bi bi-x text-primary"></i>
-                              </a>
-                            </li>
-                            <li
-                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                              <div class="d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                Morbi leo risus
-                              </div>
-                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                                <i class="bi bi-x text-primary"></i>
-                              </a>
-                            </li>
-                            <li
-                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
-                              <div class="d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." />
-                                Porta ac consectetur ac
-                              </div>
-                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                                <i class="bi bi-x text-primary"></i>
-                              </a>
-                            </li>
-                            <li
-                              class="list-group-item d-flex bg-transparent justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-0">
-                              <div class="d-flex align-items-center">
-                                <input class="form-check-input me-2" type="checkbox" value="" aria-label="..." checked />
-                                Vestibulum at eros
-                              </div>
-                              <a href="#!" data-mdb-toggle="tooltip" title="Remove item">
-                                <i class="bi bi-x text-primary"></i>
-                              </a>
-                            </li>
-                          </ul>
-              
-                        </div>
-                      </div>
-                      <hr class="mx-auto">
-                      
-                </div>      -->
-
-
-
+            </div>
+  
           </div>
         </div>
       </div>
     </section>
 
+
+    <!-- <template id="user-card">
+      <div class="col align-admins">
+        <img id="user-img" class="rounded-circle size-img">
+        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+      </div>
+    </template> -->
+    <script src="../js/admin.js"></script>
 </body>
 </html>
+
+<!-- git commit -m "changes to the admin dashboard aside; fetch api for the supervisors and interns including their various departments. there were equally other adjustments to the previous bootstrapped design." -->

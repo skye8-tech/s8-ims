@@ -5,11 +5,11 @@
 }
 
 .logo {
-    width: 6rem;
+    width: 8rem;
 }
 
 .profile-width {
-    width: 50px;
+    width: 2.5rem;
 }
 
 .admin-main {
@@ -32,8 +32,6 @@ a.user-link {
 
 .user-link:hover {
     color: #0d6dfd70;
-    padding-bottom: 1.5px;
-    border-bottom: 1px solid #0074d955;
     transition-duration: .3s;
 }
 
@@ -48,13 +46,25 @@ hr {
     text-align: center;
 }
 .p-sm {
-    font-size: .8rem;
+    font-size: 1rem;
+}
+.size-img{
+    width: 5rem !important;
 }
 
-/* .bg-transparent {
-    background-color: #f0f8ff !important;
-} */
+.full-screen-h-w{
+    height: calc(100vh - 66px);
+}
 
 .n-border{
     border: none;
+}
+
+.over-flow-left{
+    overflow-y: scroll;
+    height: calc(100vh - 66px);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
 }
