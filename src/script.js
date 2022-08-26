@@ -1,6 +1,8 @@
 
 'use strict'
 
+
+// Disable form submissions if there are invalid fields
 const $weekBtn = document.querySelector('.id-archive');
 let $currentWeek = document.querySelector('.id-active');
 let $weekTitle = document.querySelector('#Week-title');
@@ -22,4 +24,3 @@ regform.addEventListener('submit', function(e){
     myModal.toggle();
     
 })
-
