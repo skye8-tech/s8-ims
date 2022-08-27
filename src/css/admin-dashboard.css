@@ -9,7 +9,7 @@
 }
 
 .profile-width {
-    width: 40px;
+    width: 2.5rem;
 }
 
 .admin-main {
@@ -50,9 +50,23 @@ hr {
 }
 
 .size-img{
-    width: 8rem;
+    width: 5rem !important;
+}
+full-screen-h-w{
+    height: calc(100vh - 66px);
 }
 
+.n-border{
+    border: none;
+}
+
+.over-flow-left{
+    overflow-y: scroll;
+    height: calc(100vh - 66px);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /*
 /* body{
     height: 100vh;
     background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
