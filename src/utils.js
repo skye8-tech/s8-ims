@@ -8,12 +8,15 @@ export function getRequest(resource) {
         })
 }
 export function postRequest(resource, data) {
+    console.log(`${baseurl}/${resource}`)
+    console.log(data)
     return fetch(`${baseurl}/${resource}`, {
         method: 'POST',
-        headers: {'content-type': 'applications/json'},
+        headers: {'Content-Type':'application/json'},
         body: JSON.stringify(data)
     }).then(res => {
         if(!res.ok) throw Error(res)
+        console.log(res)
         return res.json()
     })
 }
@@ -29,10 +32,12 @@ export function route(...to) {
     let path = to.map((param, ind) => (pathParts[ind] + param)).join('');
 
     let url = new URL(window.location.href + path);
+    console.log(window.location.href)
     let params = new URLSearchParams(url.search);
     
-    let gotoPath = window.location.href + "/src/pages/"
+    let gotoPath = window.location.href + "src/pages/"
     
+    console.log(gotoPath)
     if (params.get("id")) {
         switch (params.get('role')) {
             case 'user': 
