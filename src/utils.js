@@ -12,12 +12,18 @@ export function postRequest(resource, data) {
         method: 'POST',
         headers: {'content-type': 'applications/json'},
         body: JSON.stringify(data)
-    }).then(res => res.json())
+    }).then(res => {
+        if(!res.ok) throw Error(res)
+        return res.json()
+    })
 }
 export function putRequest(resource) {}
 export function deleteRequest(resource) {}
 
+const pathFinder = () => {
 
+    return {id, role, user}
+}
 export function route(...to) {
     const pathParts = ['?user=', '&id=', '&role='];
     let path = to.map((param, ind) => (pathParts[ind] + param)).join('');
