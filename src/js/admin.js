@@ -37,7 +37,7 @@ function populate(users) {
 
             console.log(id)
             console.log(window.location)
-            window.location.href = "http://127.0.0.1:5501/src/pages/pt.html"
+            window.location.href = window.location.href + "/src/pages/admin-detail.html"
         })
         fragment.appendChild(div)
     })
@@ -82,7 +82,8 @@ function fill(swUsers) {
 
             console.log(id)
             console.log(window.location)
-            window.location.href = "http://127.0.0.1:5501/src/pages/pt.html"
+            window.location.href = window.location.href + "/src/pages/admin-detail.html"
+
         })
 
         fragment.appendChild(div);
@@ -129,7 +130,8 @@ function complete(dmUsers) {
 
             console.log(id)
             console.log(window.location)
-            window.location.href = "http://127.0.0.1:5501/src/pages/pt.html"
+            window.location.href = window.location.href + "/src/pages/admin-detail.html"
+
         })
 
         fragment.appendChild(div);
