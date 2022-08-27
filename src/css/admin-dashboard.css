@@ -5,11 +5,11 @@
 }
 
 .logo {
-    width: 6rem;
+    width: 8rem;
 }
 
 .profile-width {
-    width: 50px;
+    width: 40px;
 }
 
 .admin-main {
@@ -32,8 +32,6 @@ a.user-link {
 
 .user-link:hover {
     color: #0d6dfd70;
-    padding-bottom: 1.5px;
-    border-bottom: 1px solid #0074d955;
     transition-duration: .3s;
 }
 
@@ -51,10 +49,12 @@ hr {
     font-size: .8rem;
 }
 
-/* .bg-transparent {
-    background-color: #f0f8ff !important;
-} */
-
-.n-border{
-    border: none;
+.size-img{
+    width: 8rem;
 }
+
+/* body{
+    height: 100vh;
+    background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+} */
