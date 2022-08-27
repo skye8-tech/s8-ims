@@ -9,9 +9,12 @@
     margin-top: 5vh;
     border-radius: 20px;
 }
-
+body::-webkit-scrollbar{
+    width: 1px;
+}
 body {
     height: 100vh;
+    overflow: hidden;
     background: linear-gradient(#0d6efd 50%, #fafafa 50%);
     background-repeat: no-repeat;
 }
@@ -52,4 +55,7 @@ body {
     height: 20vh;
     width: 10%;
     margin-top: 5%;
+}
+.invisible {
+    display: none !important;
 }

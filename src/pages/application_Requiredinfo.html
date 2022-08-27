@@ -1,201 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apllication form (Required Info)</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apllication form (Required Info)</title>
 
-     <!--bootstrap CDN for style -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+  <!--bootstrap CDN for style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
-     <!-- Javascript-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <!-- Javascript-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
-     <!--Link to CSS-->
-    <link rel="stylesheet" href="/src/css/application.Requiredinfo.css">
-    
+  <!--Link to CSS-->
+  <link rel="stylesheet" href="/src/css/application.Requiredinfo.css">
+
 </head>
+
 <body>
 
-    <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <div class="container-fluid">
-          <a href="#" class="navbar-brand me-0">
-              <img src="/assets/images/logo.png" class="img-fluid pe-3 logo">
-          </a>
-               <h3 class="card-title text-light mx-auto">Internship Application</h5>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand me-0">
+        <img src="/assets/images/logo.png" class="img-fluid pe-3 logo">
+      </a>
+      <h3 class="card-title text-light mx-auto">Internship Application</h5>
 
-              <form class="d-flex align-items-center ">
-                  <input type="search" placeholder="Search" class="form-control me-2 h-100">
-                  <button class="btn btn-outline-light h-25" type="submit">Search</button>
-              </form>
-             
-             
-      </div>
+        <form class="d-flex align-items-center ">
+          <input type="search" placeholder="Search" class="form-control me-2 h-100">
+          <button class="btn btn-outline-light h-25" type="submit">Search</button>
+        </form>
+
+
+    </div>
   </nav>
 
+<div class="container-fluid">
 
-    <div class="container float-container container-top shadow-sm p-3 mb-5 bg-body roundedgit">
-      <form action="">
-        <div class="content">
-          <br><br><h2 class="header mb-3">Required Information</h2><br>  <!--header-->
-            <!--field to input name of school-->
-          <div class="row mb-3 ">
-            <div class="col-12">
-              <div class="form">
-                <label for="InputGrid">Name of school</label>
-                <input type="text" class="form-control" id="InputGrid" placeholder="Enter name of school" required >
-              
-              </div>
-            </div>
-          </div>
+  <div class="container float-container container-top shadow-sm p-3 mb-5 bg-body roundedgit" id="prev-form">
+    <div class="content">
+        <br><br><h2 class="header mb-3">Personal Information</h2><br>  <!--header-->
+        
+        <form class="needs-validation novalidate" id="personal-info">
+            <!--field to input name of applicant-->
 
-          <!-- Department -->
-          <div class="row g-3 mb-3">
-            <div class="col-6">
-              <div class="form">
-                <label for="InputGrid">Department</label>
-                <input type="text" class="form-control" id="InputGrid" placeholder="Enter Department" required>
-              
-              </div>
-            </div>
-
-            <!-- Field for the selction of level -->
-            <div class="col-6">
-              <div class="form">
-                <label for="SelectionGrid">Level</label>
-                <select class="form-select"  id="SelectionGrid">
-
-                  <option value="1">Level 200</option>
-                  <option value="2">Level 300</option>
-                  <option value="3">Level 400</option>
-                  <option value="4">Others</option>
-                  
-                </select> 
-              
-              
-              </div>
-            </div>
-          </div>
-
-          <!--Field of specialization -->
-          <div class="row g-3 mb-3">
-            <div class="col-6">
-              <div class="form">
-                <label for="SelectionGrid">Option</label>
-                <select class="form-select"  id="SelectionGrid">
-
-                  <option value="1">Select field of specialization </option>
-                  <option value="2">Software Development</option>
-                  <option value="3">Digital Marketing</option>
-                  <option value="4">Computer Networking</option>
-                  <option value="5">Others</option>
-                  
-                </select> 
-              
-              
-              </div>
-            </div>
-
-
-            <!--Field for Attatment files -->
-            <div class="col-6">
-              <div class="form">
-                <label for="Attatchment">Attatchment(s)</label>
-                <div class="input-group mb-3">
-                  <input type="file" class="form-control" id="Attatchment" required>
-                
+            <div class="row g-3 mb-3 ">
+                <label for="name">Name</label>
+                <div class="col-6">
+                <div class="form">
+                    <input name="firstname" type="text" class="form-control" id="fname" placeholder="First Name" required>
                 </div>
-              </div>
+                </div>
+                <div class="col-6">
+                    <div class="form">
+                    <input name="lastname" type="text" class="form-control" id="lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+            </div>
+
+             <!--field to input Address-->
+            <div class="row mb-3">
+                    <div class="col-12">
+                    <div class="form">
+                        <label for="department">Address</label>
+                        <input name="address" type="text" class="form-control" id="department" placeholder="Enter Address" required>
+                    </div>
+                    </div>
+            </div>
+
+             <!--field to input E-mail-->
+            <div class="row g-3 mb-3 ">
+                <div class="col-6">  
+                    <div class="form">
+                        <label for="name">E-mail</label>
+                        <input name="email" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                    </div>
+                </div>
+                 <!--field to input Phone Number-->
+                <div class="col-6">
+                    <div class="form">
+                        <label for="phone">Contact</label>
+                        <input name="contact" type="number" class="form-control" id="phone" placeholder="+237-650-523-316" required>
+                    </div>
+                </div>
+                    
             </div>
             
-          </div>
-
-          <!-- Field to Input start date -->
-          <div class="row g-3 mb-3">
-            <div class="col-6">
-              <div class="form">
-                <label for="InputGrid">Start Date</label>
-                <input type="date" class="form-control" id="InputDate" placeholder="14-08-2022" required >
-              
-              </div>
-            </div>
-
-            <!--Field to pick Duration for internship -->
-            <div class="col-6">
-              <div class="form">
-                <label for="SelectionGrid">Duration</label>
-                <select class="form-select"  id="SelectionGrid" required>
-                  <option value="1">1 Month</option>
-                  <option value="2">2 Months</option>
-                  <option value="3">3 Months</option>
-                  <option value="4">6 Months</option>
-                  <option value="4">other</option>
-                </select> 
-              </div>
-            </div>
-          </div>
-
-          <!--Terms and conditions-->
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-            <label class="form-check-label" for="invalidCheck2">
-              Agree to terms and conditions
-            </label>
-          </div>
-
-          <!-- Buttons-->
-          <div class="d-grid gap-2 d-md-flex justify-content-end">
-            <button type="button" class="btn btn-outline-primary mb-5">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-              </svg>
-              Back
-            </button>
-
-            <!-- Button trigger modal -->
-            <button type="submit" class="btn btn-primary mb-5" data-toggle="modal" data-bs-target="#staticBackdrop">
-              Submit
-            </button>
-
-              <!-- Modal -->
-              <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="staticBackdropLabel">Success</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             <!--Radio button to select gender-->
+            <div class="row g-3  ">
+                <label for="radio">Gender</label>
+                <div class="form-flex">
+                    <div class="form-check form-check-inline">
+                        <input name="gender" class="form-check-input" type="radio" id="Radio1" value="option1">
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
                     </div>
-                    <div class="modal-body">
-                      <a href="#" class="navbar-brand me-0">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi1 bi-check-circle" viewBox="0 0 16 16">
-                          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                          <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
-                        </svg>
-                    </a>
-                    
-                      Your application has been succesfully submitted. A token will be sent to you via E-mail once your application has been approved
+                    <div class="form-check form-check-inline">
+                        <input name="gender" class="form-check-input" type="radio"  id="Radio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
                     </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                      <button type="button" class="btn btn-primary">Continue</button>
-                    </div>
-                  </div>
                 </div>
             </div>
+                
+            <!-- Buttons-->
+            <div class="d-grid gap-2 d-md-flex justify-content-end">
+                <button type="button" class="btn btn-primary mb-5" id="next-form-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                Next
+                </button>
+            </div>
+        
+
+        </form>
+    </div>
+</div>
+
+
+
+  <div class="container invisible float-container container-top shadow-sm p-3 mb-5 bg-body roundedgit" id="next-form">
+    <form id="required-info">
+      <div class="content">
+        <br><br>
+        <h2 class="header mb-3">Required Information</h2><br>
+        <!--header-->
+        <!--field to input name of school-->
+        <div class="row mb-3 ">
+          <div class="col-12">
+            <div class="form">
+              <label for="InputGrid">Name of school</label>
+              <input name="schoolname" type="text" class="form-control" id="InputGrid" placeholder="Enter name of school" required>
+
+            </div>
+          </div>
         </div>
-          
-      </div>
+
+        <!-- Department -->
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <div class="form">
+              <label for="InputGrid">Department</label>
+              <input name="department" type="text" class="form-control" id="InputGrid" placeholder="Enter Department" required>
+
+            </div>
+          </div>
+
+          <!-- Field for the selction of level -->
+          <div class="col-6">
+            <div class="form">
+              <label for="SelectionGrid">Level</label>
+              <select name="level" class="form-select" id="SelectionGrid">
+
+                <option value="1">Level 200</option>
+                <option value="2">Level 300</option>
+                <option value="3">Level 400</option>
+                <option value="4">Others</option>
+
+              </select>
+
+
+            </div>
+          </div>
+        </div>
+
+        <!--Field of specialization -->
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <div class="form">
+              <label for="SelectionGrid">Option</label>
+              <select name="specialisation" class="form-select" id="SelectionGrid">
+
+                <option value="1">Select field of specialization </option>
+                <option value="2">Software Development</option>
+                <option value="3">Digital Marketing</option>
+                <option value="4">Computer Networking</option>
+                <option value="5">Others</option>
+
+              </select>
+
+
+            </div>
+          </div>
+
+
+          <!--Field for Attatment files -->
+          <div class="col-6">
+            <div class="form">
+              <label for="Attatchment">Attatchment(s)</label>
+              <div class="input-group mb-3">
+                <input name="attachment" type="file" class="form-control" id="Attatchment" required>
+
+              </div>
+            </div>
+          </div>
 
         </div>
-       
-      </form>
-    
-       
-         
-    </div>
+
+        <!-- Field to Input start date -->
+        <div class="row g-3 mb-3">
+          <div class="col-6">
+            <div class="form">
+              <label for="InputGrid">Start Date</label>
+              <input name="startDate" type="date" class="form-control" id="InputDate" placeholder="14-08-2022" required>
+
+            </div>
+          </div>
+
+          <!--Field to pick Duration for internship -->
+          <div class="col-6">
+            <div class="form">
+              <label for="SelectionGrid">Duration</label>
+              <select class="form-select" id="SelectionGrid" required>
+                <option value="1">1 Month</option>
+                <option value="2">2 Months</option>
+                <option value="3">3 Months</option>
+                <option value="4">6 Months</option>
+                <option value="4">other</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!--Terms and conditions-->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+          <label class="form-check-label" for="invalidCheck2">
+            Agree to terms and conditions
+          </label>
+        </div>
+
+        <!-- Buttons-->
+        <div class="d-grid gap-2 d-md-flex justify-content-end">
+          <button type="button" class="btn btn-outline-primary mb-5" id="prev-form-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+            Back
+          </button>
+
+          <!-- Button trigger modal -->
+          <button type="submit" class="btn btn-primary mb-5" data-bs-target="#staticBackdrop" id="submit-form-btn">
+            Submit
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Success</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <a href="#" class="navbar-brand me-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi1 bi-check-circle" viewBox="0 0 16 16">
+                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                      <path
+                        d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z" />
+                    </svg>
+                  </a>
+
+                  Your application has been succesfully submitted. A token will be sent to you via E-mail once your
+                  application has been approved
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Continue</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </div>
+
+  <script type="module" src="../js/application.js"></script>
+</div>
+
 </body>
 </html>
