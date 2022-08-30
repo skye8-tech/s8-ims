@@ -1,7 +1,7 @@
-// import getRequest from '../script';
+import { logout } from './../utils.js';
+
 
 let $userCard = document.getElementById('user-card');
-// let div = document.createElement('div');
 // ****** Get users
 
 fetch('https://s8-ims-api.herokuapp.com/api/users')
@@ -140,3 +140,4 @@ function complete(dmUsers) {
 
     internsDm.append(fragment);
 }
+document.querySelector('[data-logout]').addEventListener('click', logout);
