@@ -1,143 +1,81 @@
-import { logout } from './../utils.js';
+import { getRequest, logout, route } from './../utils.js';
 
-
-let $userCard = document.getElementById('user-card');
-// ****** Get users
-
-fetch('https://s8-ims-api.herokuapp.com/api/users')
-.then(res => {
-    console.log(res.ok)
-    return res.json();
-}).then(dt => {
-    console.log(dt)
-    populate(dt)
-})
 
 let $supervisors = document.getElementById('supervisors');
-
-function populate(users) {
-    let fragment = new DocumentFragment();
-    
-    users.map(user => {
-        const div = document.createElement("div");
-        div.classList.add('col-2', 'align-admins');
-        div.setAttribute('id', user.id);
-        let $card = $userCard.content.cloneNode(true);
-        let $img = $card.getElementById('user-img');
-        let $title = $card.getElementById('user-link');
-        
-        $img.src = 'https://picsum.photos/200';
-        $title.innerText = user.name;
-
-        div.appendChild($img);
-        div.appendChild($title);
-
-        div.addEventListener('click', (e) => {
-            const id = e.currentTarget.closest('.align-admins').getAttribute('id');
-
-            console.log(id)
-            console.log(window.location)
-            window.location.href = window.location.href + "/src/pages/admin-detail.html"
-        })
-        fragment.appendChild(div)
-    })
-
-    $supervisors.append(fragment);
-}
-
-
-let swCard = document.getElementById('sw-card');
-
-fetch('https://s8-ims-api.herokuapp.com/api/users')
-.then(res => {
-    console.log(res.ok);
-    return res.json();
-}).then(dt => {
-    console.log(dt);
-    fill(dt);
-})
-
+let $internList = document.querySelector('[data-intern-list]');
+let $userCard = document.getElementById('user-card');
 let interns = document.getElementById('internsSw');
 
-function fill(swUsers) {
-    let fragment = new DocumentFragment();
+const $cardTemplate = document.getElementById('card-template');
+const $internWithGroupingTemplate = document.getElementById('interns-department-template');
 
-    swUsers.map(swUser => {
-        const div = document.createElement("div");
-        div.classList.add('col-2', 'align-admins');
-        div.setAttribute('id', swUser.id);
 
-        let card = swCard.content.cloneNode(true);
-        let swImg = card.getElementById('sw-img');
-        let swTitle = card.getElementById('sw-link');
+// ****** Get users
+/**
+ * 
+ * @param {Object} OneCardCon the object representing a user
+ * @param {HTMLdomElement} position the DOM element to insert the object title and img into
+ */
+const populateCard = (OneCardCon, position) => {
+    const cardItem = $cardTemplate.content.cloneNode(true);
+    cardItem.querySelector('[data-user-img]').src = 'https://picsum.photos/200';
+    cardItem.querySelector('[data-user-name]').textContent = OneCardCon.name;
 
-        swImg.src = 'https://picsum.photos/200';
-        swTitle.innerText = swUser.name;
-
-        div.appendChild(swImg);
-        div.appendChild(swTitle);
-
-        div.addEventListener('click', (e) => {
-            const id = e.currentTarget.closest('.align-admins').getAttribute('id');
-
-            console.log(id)
-            console.log(window.location)
-            window.location.href = window.location.href + "/src/pages/admin-detail.html"
-
-        })
-
-        fragment.appendChild(div);
-
+    cardItem.addEventListener('click', (e) => {
+        route('users', OneCardCon.id, 'user');
     })
+    position.append(cardItem)
+}
 
-    interns.append(fragment);
+const groupBy = (users, condition) => {
+    return users.reduce((grouping, user) => {
+        const key = condition(user)
+        if (grouping[key] == undefined || grouping[key] == null) grouping[key] = [];
+        grouping[key].push(user);
+
+        return grouping;
+    }, {})
+} 
+
+const populateWithGrouping = (cont) => {
+    const groupIntern = $internWithGroupingTemplate.content.cloneNode(true);
+    groupIntern.querySelector('[data-dep-title]').textContent = cont?.department || 'No Department Yet';
+    $internList.append(groupIntern);
 }
 
 
-let dmCard = document.getElementById('dm-card');
 
-fetch('https://s8-ims-api.herokuapp.com/api/users')
-.then(res => {
-    console.log(res.ok);
-    return res.json();
-}).then(dt => {
-    console.log(dt);
-    complete(dt);
-})
+(function Sup() {
+    getRequest('users').then(users => {
+        // console.log($internList.firstElementChild)
+        users && $supervisors.previousElementSibling.remove()
+        
+        // When the users are got, filter only the supervisors and populate their section
+        const supervisors = users.filter(user => user.role === 'supervisour' || user.role === 'supervisor');
+        
+        if (supervisors.length === 0) {
+            $supervisors.previousElementSibling.innerHTML += `<h2 class='lead text-center pt-3'>No Supervisors in the system </h2>`;
+        } else {
+            supervisors.forEach(supervisor => {
+                populateCard(supervisor, $supervisors);
+            })
+        }
+        
+        // Group the users per department and return an object
+        const usersPerDep = (groupBy(users.filter(user => user.role === 'user'), user => user.department));
+        
+        users && $internList.previousElementSibling.remove() // remove the loading element
 
-let internsDm = document.getElementById('internsDm');
-
-function complete(dmUsers) {
-    let fragment = new DocumentFragment();
-
-    dmUsers.map(dmUser => {
-        const div = document.createElement("div");
-        div.classList.add('col-2', 'align-admins');
-        div.setAttribute('id', dmUser.id);
-
-        let cards = dmCard.content.cloneNode(true);
-        let dmImg = cards.getElementById('dm-img');
-        let dmTitle = cards.getElementById('dm-link');
-
-        dmImg.src = 'https://picsum.photos/200';
-        dmTitle.innerText = dmUser.name;
-
-        div.appendChild(dmImg);
-        div.appendChild(dmTitle);
-
-        div.addEventListener('click', (e) => {
-            const id = e.currentTarget.closest('.align-admins').getAttribute('id');
-
-            console.log(id)
-            console.log(window.location)
-            window.location.href = window.location.href + "/src/pages/admin-detail.html"
-
-        })
-
-        fragment.appendChild(div);
-
+        // Loop through the usersPerDep object and populate the DOM
+        for (let dep in usersPerDep) {
+            if (usersPerDep.hasOwnProperty(dep)) {
+                populateWithGrouping(); // Create the group name
+                
+                // loop through the users in the given department.
+                usersPerDep[dep].forEach(user => {
+                    populateCard(user, document.querySelector('[data-dep-list]'))
+                }) 
+            }
+        }
     })
-
-    internsDm.append(fragment);
-}
-document.querySelector('[data-logout]').addEventListener('click', logout);
+})()

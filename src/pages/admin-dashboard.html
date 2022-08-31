@@ -21,15 +21,13 @@
   
 </head>
 <body>
-    
-  <!-- The Admins Navigation Bar -->
-
+    <!-- The Admins Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
       <!--container-->
         <div class="container-fluid">
           <!--brand logo-->
             <a href="#" class="navbar-brand me-0">
-                <img src="assets/images/logo.png" class="img-fluid pe-3 logo">
+                <img src="../../assets/images/logo.png" class="img-fluid pe-3 logo">
             </a>
             <!--search area-->
                 <form class="d-flex align-items-center ">
@@ -54,76 +52,49 @@
         </div>
     </nav>
 
-
-  <!-- The Admins Main Section -->
-
+    <!-- The Admins Main Section -->
     <section id="main" class="full-screen-h-w">
       <div class="container-fluid admin-main">
         <div class="d-flex-column d-sm-flex align-items-start">
           <div class="col-12 col-sm-7">
             <div class="container-fluid px-5 over-flow-left">
               <div>
-                <div>
-                  <h3 class="text-center my-4">Supervisors</h3>
-                </div>
-
-                  <div class="d-flex gap-4 flex-wrap" id="supervisors">
-                    <template id="user-card">
-                        <img id="user-img" class="rounded-circle size-img">
-                        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
-                    </template>
+                <h3 class="text-center my-4">Supervisors</h3>
+                <div class="text-center">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
                   </div>
+                </div> 
+                <div class="d-flex gap-4 flex-wrap" id="supervisors"></div>
               </div>
+              
               <div>
-                <div>
-                  <h3 class="text-center my-4">Interns</h3>
-                </div>
-
-                <div>
-                  <h5 class="my-4">Software Engineers</h5>
-                </div>
-
-                  <div class="d-flex gap-4 flex-wrap" id="internsSw">
-                        <template id="sw-card">
-                          <div class="col-2 align-admins sw-div">
-                            <img id="sw-img" class="rounded-circle size-img">
-                            <a href="#" class="user-link d-flex justify-content-center" id="sw-link"></a>
-                          </div>
-                        </template>
+                <div><h3 class="text-center my-4">Interns</h3></div>
+                <div class="text-center">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
                   </div>
-                  
-                  <div>
-                    <h5 class="my-4">Digital Marketers</h5>
-                  </div>
-    
-                  <div class="d-flex gap-4 flex-wrap" id="internsDm">
-                      <template id="dm-card">
-                        <div class="col-2 align-admins dm-div">
-                          <img id="dm-img" class="rounded-circle size-img">
-                          <a href="#" class="user-link d-flex justify-content-center" id="dm-link"></a>
-                        </div>
-                      </template>
-                  </div>
+                </div>                 
+                <div data-intern-list></div>
               </div>
+            </div>
           </div>
-          </div>
+
           <div class="container-fluid col-12 col-sm-5 bg-white p-0">
             <div class="container-fluid py-3">
                     <div class="border-0" id="list1">
                       <div class="admin-main shadow-lg p-2 p-sm-3">
             
                         <h4 class="text-center text-outline-primary mb-3">Task List</h4>
-            
-                          <div class="d-sm-flex justify-content-center align-items-center mb-2">
-                                  <input type="text" class="form-control border-0" id="taskInput"
-                                  placeholder="Add new task...">
-                                  <div class="d-flex justify-content-end gap-2 gap-sm-0 mt-2 mt-sm-0 align-items-center">
+                        <div class="d-sm-flex justify-content-center align-items-center mb-2">
+                                <input type="text" class="form-control border-0" id="taskInput"
+                                placeholder="Add new task...">
+                                <div class="d-flex justify-content-end gap-2 gap-sm-0 mt-2 mt-sm-0 align-items-center">
                                     <a href="#" data-mdb-toggle="tooltip" title="Set due date"><i
                                       class="bi-calendar-fill bi-md me-sm-3 p-2"></i></a>
                                     <button type="button" class="btn btn-sm btn-primary" onclick="newTask()">Add</button>
-                                  </div>
-                          </div>
-            
+                                </div>
+                        </div>
                         <div>
                           <div class="p-1 bg-transparent shadow-sm mb-3">
                             <div id="myTaskList" class="container text-center text-lg-start d-lg-flex justify-content-md-between align-items-sm-center">
@@ -261,19 +232,18 @@
                       </div>
                     </div>
             </div>
-  
           </div>
         </div>
       </div>
     </section>
 
 
-    <!-- <template id="user-card">
-      <div class="col align-admins">
-        <img id="user-img" class="rounded-circle size-img">
-        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+    <template id="card-template">
+      <div class="col align-admins" data-user-clickable>
+        <img id="user-img" class="rounded-circle size-img" data-user-img>
+        <a href="#" class="user-link d-flex justify-content-center" id="user-link" data-user-name></a>
       </div>
-    </template> -->
+    </template>
     <script type="module" src="../js/admin.js"></script>
 </body>
 </html>
