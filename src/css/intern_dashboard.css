@@ -1,14 +1,63 @@
+.textarea{
+    background-color: #f0f8ff;
+    padding: 1em;
+    border-radius: 15px;
+    border: 2px solid transparent;
+    outline: none;
+    height: 300px !important;
+    width: 600px;
+    line-height: 1.4;
+    font-size: 16px;
+    justify-self: center;
+    transition: all 0.2s;
+    
+}
+textarea:hover{
+    outline: auto;
+    outline-color: #8dc2cde3;
+
+}
+
+.text-left{
+    padding-left: 26%;
+}
 .task{
 background-color: aliceblue;
 margin-left: 5%;
 }
 .review{
-    height: 15vh;
-    width: 100%;
-    border-radius: 5%;
+    height: 10vh;
+    width: 40%;
+   
 }
+.textarea2{
+    background-color: #f0f8ff;
+    padding: 1em;
+    border: 2px solid transparent;
+    border-radius: 8%;
+    height: 50px !important;
+    width: 200px;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: all 0.2s;
+    justify-self: center;
+    
+}
+
+.textarea2:hover{
+    outline: auto;
+    outline-color: #8dc2cde3;
+
+}
+
+.admin-main {
+    background-color: #f0f8ff;
+}
+
 .image{
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
+
+/*#6acce0e3
