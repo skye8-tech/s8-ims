@@ -43,8 +43,6 @@ const populateWithGrouping = (cont) => {
     $internList.append(groupIntern);
 }
 
-
-
 (function Sup() {
     getRequest('users').then(users => {
         // console.log($internList.firstElementChild)
@@ -79,3 +77,6 @@ const populateWithGrouping = (cont) => {
         }
     })
 })()
+
+
+document.querySelector('[data-logout]').addEventListener('click', logout);

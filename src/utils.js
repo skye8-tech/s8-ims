@@ -91,8 +91,8 @@ export function route(...to) {
                 document.title = 'Admin\'s dashboard | SKYE8'
                 return ;
             case 'supervisor': 
-                location.assign(`supervisor_dashboard.html?id=${params.get('id')}&user=${params.get('role')}`);
-                document.title = 'Supervisor\'s dashboard | SKYE8';
+                location.assign(gotoPath + `supervisor_dashboard.html?id=${params.get('id')}&user=${params.get('role')}`);
+                // document.title = 'Supervisor\'s dashboard | SKYE8';
                 return;
             default : 
                 return location.assign(window.location.href);
