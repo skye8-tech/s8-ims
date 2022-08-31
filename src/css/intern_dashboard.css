@@ -1,10 +1,22 @@
-.textarea{
+
+.container{
     background-color: #f0f8ff;
+    margin-top: -5px;
+    
+    
+}
+.text-left{
+    margin-left: 40%;
+    margin-right: 40%;
+ }
+
+.textarea{
+    background-color: #ffffff;
     padding: 1em;
-    border-radius: 15px;
+    /*border-radius: 15px;*/
     border: 2px solid transparent;
     outline: none;
-    height: 300px !important;
+    height: 260px !important;
     width: 600px;
     line-height: 1.4;
     font-size: 16px;
@@ -18,13 +30,11 @@ textarea:hover{
 
 }
 
-.text-left{
-    padding-left: 26%;
+.button{
+    margin-left: 40%;
+    margin-right: 30%;
 }
-.task{
-background-color: aliceblue;
-margin-left: 5%;
-}
+
 .review{
     height: 10vh;
     width: 40%;
@@ -33,10 +43,11 @@ margin-left: 5%;
 .textarea2{
     background-color: #f0f8ff;
     padding: 1em;
+    outline: none;
     border: 2px solid transparent;
-    border-radius: 8%;
-    height: 50px !important;
-    width: 200px;
+    border-radius: 3%;
+    height: 80px !important;
+    width: 500px;
     line-height: 1.4;
     font-size: 16px;
     transition: all 0.2s;
