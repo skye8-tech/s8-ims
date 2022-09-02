@@ -31,7 +31,7 @@
             <image class="text-light" src="/assets/icons/bootstrap-icons-1.9.1/chevron-down.svg">
         </button>
         <ul class="dropdown-menu text-center">
-          <li data-logout><a href="#" class="btn-sm text-danger">logout</a></li>
+          <li id="data-logout"><a href="#" class="btn-sm text-danger">logout</a></li>
         </ul>
       </div>
     </div>
@@ -45,72 +45,10 @@
           <h3>Interns</h3>
         </div>
         <div class="">
-          <div class="d-flex px-6 mx-4 gap-5">
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-          </div>
-          <div class="d-flex  my-6 px-6 mx-4 gap-5">
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-          </div>
-          <div class="d-flex  my-6 px-6 mx-4 gap-5">
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-            </div>
-            <div class="alignment">
-              <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-body">
-              <p >Lorem ipsum</p>
-
-            </div>
+          <div class="d-flex flex-wrap px-6 mx-4 gap-5" data-intern-list>
+            
+            
+            
           </div>
         </div>
       </div>
@@ -196,6 +134,14 @@
         </div>
     </div>
 
+
+
+    <template id="intern-template">
+      <div class="alignment">
+        <img class="rounded-circle img-fluid img-body" data-intern-img>
+        <p data-intern-name></p>
+      </div>
+    </template>
     <script type="module" src="../js/supervisor.js"></script>
 </body>
 </html>
