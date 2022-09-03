@@ -1,29 +1,74 @@
-import { route } from "../utils";
-
-
-
 'use strict'
 
+import { postRequest } from "../utils.js";
 
-// // Disable form submissions if there are invalid fields
-// const $weekBtn = document.querySelector('.id-archive');
-// let $currentWeek = document.querySelector('.id-active');
-// let $weekTitle = document.querySelector('#Week-title');
+const $save = document.querySelector('#save');
+//const $submit = document.querySelector('#submit');
 
-// const clickWeekHandler = (e) => {
-//     e.target.classList.toggle('id-active');
-//     $currentWeek.classList.toggle('id-active');
-//     $weekTitle.textContent = e.target.textContent;
-//     $currentWeek = e.target; // keep track of the current element.
+const $logbook = document.querySelector('#form1');
+//giconst $review = document.querySelector('#form2');
+
+const form1data = {};
+
+const saveform1Data = () => {
+    //form1data['userid'] = $logbook.userid.value,
+    form1data['content'] = $logbook.content.value,
+    form1data['date'] = $logbook.date.value;
+
+   
+}
+// const form2data = {};
+
+// const saveform2Data = ()=>{
+//     //form2data['userid'] = $review.userid.value,
+//     form2data['content1'] = $review.content1.value;
+//     //form2data['date'] = $review.date.value;
+
+   
 // }
-// $weekBtn.addEventListener('click', e => {clickWeekHandler(e)})
 
+$save.addEventListener('click', () => {
+    saveform1Data();
 
-// Modal activation after validation
-const regform = document.getElementById('regform')
-regform.addEventListener('submit', function(e){
-    let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
-    e.preventDefault();
-    myModal.toggle();
-    
 })
+// $submit.addEventListener('click', () => {
+//     saveform2Data();
+
+// })
+$logbook.addEventListener('submit', (e) => {
+    e.preventDefault();
+    saveform1Data();
+
+    console.log(form1data)
+    postRequest('https:;//s8-ims-api.herokuapp.com/api/logbooks/', form1data)
+    .then(res => {
+      console.log(res)
+      //console.warn('saved', {form1data});
+    })
+   
+    document.forms[0].reset();
+
+})
+// $review.addEventListener('submit', (e) => {
+//     e.preventDefault();
+//     saveform2Data();
+
+//     console.log(form2data)
+//     postRequest('https:;//s8-ims-api.herokuapp.com/api/logbooks/', form2data)
+//     .then(res => {
+//        console.log(res)
+//     })
+//     document.forms[0].reset();
+// })
+
+
+
+
+
+     
+
+
+
+
+
+
