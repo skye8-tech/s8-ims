@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/supervisor_dashboard.css">
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-dark bg-primary">
+    <!-- Navbar content -->
+    <div class="container-fluid">
+      <a href="#" class="navbar-brand">
+        <img class="img-fluid img-width-brand" src="../../../assets/images/logo.png">
+      </a>
+
+      <form class="d-flex align-items-center" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-light" type="submit">Search</button>
+      </form>
+
+      <div class="d-flex-align-items-center ms-auto justify-content-start text-light">
+        <h2> Supervisor Dashboard</h2>
+      </div>
+
+      <img src="https://picsum.photos/200" class="rounded-circle img-fluid img-home">
+
+      <div class="dropdown ms-3 me-5">
+        <button class="btn btn-sm text-light" type="button" id="dropdownMenu" data-bs-toggle="dropdown">
+          <image class="text-light" src="../../../assets/icons/bootstrap-icons-1.9.1/chevron-down.svg">
+        </button>
+        <ul class="dropdown-menu text-center">
+          <li id="data-logout"><a href="#" class="btn-sm text-danger">logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- left body content -->
+  <div data-root></div>
+
+
+
+  <template id="s--temp">
+    <div class="row" id="supervisor">
+      <div class="col-sm-8 bg-light">
+        <div class="row text-center my-5">
+          <h3>Interns</h3>
+        </div>
+        <div class="">
+          <div class="d-flex flex-wrap px-6 mx-4 gap-5" data-i--list></div>
+        </div>
+      </div>
+
+      <!-- Right body content -->
+      <div class="col-sm-4">
+        <div class="row text-center my-5">
+          <div class="task">
+            <h3>Task Lists</h3>
+          </div>
+        </div>
+
+        <div class="py-4 bg-light col-sm-10 mx-auto px-4 gap-5">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label for="form-check-label" for="flexCheckDefault"> Calculator with HTML & JS</label>
+            <button type="button" class="btn-close px-4" aria-label="Close"></button>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label for="form-check-label" for="flexCheckDefault"> Calculator with HTML & JS</label>
+            <button type="button" class="btn-close px-4" aria-label="Close"></button>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label for="form-check-label" for="flexCheckDefault"> Calculator with HTML & JS</label>
+            <button type="button" class="btn-close px-4" aria-label="Close"></button>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label for="form-check-label" for="flexCheckDefault"> Calculator with HTML & JS</label>
+            <button type="button" class="btn-close px-4" aria-label="Close"></button>
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label for="form-check-label" for="flexCheckDefault"> Calculator with HTML & JS</label>
+            <button type="button" class="btn-close px-4" aria-label="Close"></button>
+          </div>
+
+        </div>
+
+        <div class="col-3 d-grid mx-auto  py-4">
+          <button type="button" class="btn btn-primary ">Add Task</button>
+        </div>
+
+        <div class="row text-center my-2">
+          <div class="task">
+            <h3>Reviews</h3>
+          </div>
+        </div>
+
+        <div class="py-4 bg-light col-sm-10 mx-auto px-4 text-center ">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, repellendus beatae. Vero, obcaecati
+            recusandae eum sequi doloremque exercitationem, reprehenderit maxime porro in quos mollitia natus a,
+            molestias
+            cumque veniam voluptates!</p>
+
+        </div>
+
+        <div class="option px-4 text-center my-4">
+          <div class="row gx-2 gy-2">
+
+            <div class="col">
+              <div class="p-2 ">
+                <button type="button" class="btn btn-primary">Previous</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="p-2 ">
+                <button type="button" class="btn btn-primary">Clear</button>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="p-2 ">
+                <button type="button" class="btn btn-primary">Next</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="i--temp">
+    <main class="container-fluid bg-primary bg-opacity-10 id-full-screen">
+      <section class="row h-100">
+
+        <!-- The aside to display the works already filled -->
+        <aside class="col-md-2 col-12 d-flex flex-md-column flex-wrap align-content-center justify-content-between">
+          <section class="id-archive-top w-100">
+            <article class="back-btn text-md-center my-3">
+              <a role="button" class="btn btn-primary" data-route-back>
+                <span class="bi bi-arrow-left-short"></span> Back
+              </a>
+            </article>
+            <article class="id-archive d-md-flex flex-column" data-intern-week-list>
+              <button
+                class="week-item id-active btn py-3 border-dark border-opacity-25 border-0 rounded-0 border-bottom"
+                data-week-btn></button>
+            </article>
+          </section>
+          <article class="id-download my-4 ms-2 border-dark border-opacity-25 rounded-0 border-0">
+            <button class="btn btn-primary w-100" data-download>
+              Download
+            </button>
+          </article>
+        </aside>
+
+        <!-- section for the interns logbook details -->
+        <section class="col-md-7 col-12 g-0">
+          <section class="container-md id-board mt-3 text-color rounded-2">
+            <!-- display the week currently active -->
+            <header class="row">
+              <h3 class="display-5" id="Week-title" data-current-week></h3>
+              </div>
+            </header>
+            <!-- display the currently active week -->
+            <section class="id-details w-100 border-top">
+              <article class="col-12">
+                <ul>
+                  <li class="d-flex">
+                    <h4 data-day>Day 1 &nbsp;</h4> <span class="vr"></span data-days-date> &nbsp; date
+                  </li>
+                  <ul data-day-list></ul>
+                </ul>
+              </article>
+            </section>
+          </section>
+        </section>
+
+
+        <!-- Interns detail section -->
+        <article class="col-md-3 col-12">
+          <div class=" h-100">
+            <div class="py-2"></div>
+            <div class="profile position-relative mx-1">
+              <div class="profile-bg position-absolute start-0 end-0 "></div>
+              <div class="profile-content d-flex flex-column align-items-center position-relative">
+                <div class="">
+                  <img src="../../../assets/images/niga-profile.png" class="rounded-circle" alt="username">
+                </div>
+                <h3 class="h3 mt-1 mb-0">
+                  <a href="#" class="link-dark text-decoration-none title" data-i-name></a>
+                </h3>
+                <p class="">
+                  <a href="#" class="link-dark text-decoration-none" target="_blank" rel="noopener noreferrer"
+                    data-i-department></a>
+                </p>
+                <div class="mt-2 mx-1 text-center">
+                  <h4 class="h4 mb-1">About</h4>
+                  <p class="" data-i-about></p>
+
+                  <button class="btn btn-primary" data-assign-task-btn>Assign task</button>
+                </div>
+              </div>
+            </div>
+            <div class="py-2"></div>
+            <div class="expiration mt-md-3 d-flex flex-column align-items-center py-4 rounded-3 position-relative">
+              <h5 class="h5 border-bottom border-dark border-opacity-10">Account Expiration</h5>
+              <p class="fs-3 lead" data-days-countdown> 26 Days left</p>
+
+              <div class="account-state w-100 d-flex justify-content-evenly ">
+                <button class="btn btn-success" data-e-i>Extend</button>
+                <button class="btn btn-danger" data-s-i>Delete</button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+  </template>
+
+
+  <template id="i-c--temp">
+    <div class="alignment" data-intern-card>
+      <img class="rounded-circle img-fluid img-body" data-intern-img>
+      <p data-intern-name></p>
+    </div>
+  </template>
+  <script type="module" src="../../js/supervisor.js"></script>
+</body>
+
+</html>
