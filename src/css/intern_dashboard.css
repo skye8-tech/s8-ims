@@ -1,14 +1,74 @@
-.task{
-background-color: aliceblue;
-margin-left: 5%;
+
+.container{
+    background-color: #f0f8ff;
+    margin-top: -5px;
+    
+    
 }
+.text-left{
+    margin-left: 40%;
+    margin-right: 40%;
+ }
+
+.textarea{
+    background-color: #ffffff;
+    padding: 1em;
+    /*border-radius: 15px;*/
+    border: 2px solid transparent;
+    outline: none;
+    height: 260px !important;
+    width: 600px;
+    line-height: 1.4;
+    font-size: 16px;
+    justify-self: center;
+    transition: all 0.2s;
+    
+}
+textarea:hover{
+    outline: auto;
+    outline-color: #8dc2cde3;
+
+}
+
+.button{
+    margin-left: 40%;
+    margin-right: 30%;
+}
+
 .review{
-    height: 15vh;
-    width: 100%;
-    border-radius: 5%;
+    height: 10vh;
+    width: 40%;
+   
 }
+.textarea2{
+    background-color: #f0f8ff;
+    padding: 1em;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 3%;
+    height: 80px !important;
+    width: 500px;
+    line-height: 1.4;
+    font-size: 16px;
+    transition: all 0.2s;
+    justify-self: center;
+    
+}
+
+.textarea2:hover{
+    outline: auto;
+    outline-color: #8dc2cde3;
+
+}
+
+.admin-main {
+    background-color: #f0f8ff;
+}
+
 .image{
     height: 3rem;
     width: 3rem;
     border-radius: 50%;
 }
+
+/*#6acce0e3
