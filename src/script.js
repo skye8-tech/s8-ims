@@ -11,7 +11,8 @@ const clickWeekHandler = (e) => {
     $weekTitle.textContent = e.target.textContent;
     $currentWeek = e.target; // keep track of the current element.
 }
-$weekBtn.addEventListener('click', e => {clickWeekHandler(e)})
+
+$weekBtn.addEventListener('click', (e) => {clickWeekHandler(e)});
 
 
 // Modal activation after validation
