@@ -25,10 +25,11 @@ const saveForm2Data = () => {
     console.log('niga in form 2')
     formData['schoolname'] = $formRequiredInfo.schoolname.value;
     formData['department'] = $formRequiredInfo.department.value;
-    formData['special'] = $formRequiredInfo.specialisation.value;
+    formData['specialty'] = $formRequiredInfo.specialisation.value;
     formData['startDate'] = $formRequiredInfo.startDate.value;
-    formData['startDate'] = $formRequiredInfo.attachment.value;
-    formData['startDate'] = $formRequiredInfo.level.value;
+    formData['attatchment'] = $formRequiredInfo.attachment.value;
+    formData['Level'] = $formRequiredInfo.level.value;
+    formData['Duration'] = $formRequiredInfo.duration.value;
 }
 
 
@@ -48,9 +49,9 @@ $formRequiredInfo.addEventListener('submit', (e) => {
     e.preventDefault();
     saveForm2Data();
 
-    console.log(formData)
+    console.log(formData);
     postRequest('applications', formData)
         .then(res => {
             console.log(res);
-        })
+    })
 })
