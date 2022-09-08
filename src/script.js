@@ -17,9 +17,9 @@ const userIn = e => {
     if (token && userDetails) { // Verify if user is still having the token?
         userDetails = JSON.parse(userDetails)
         console.log('niga in user')
-        location.assign(window.location +"/src/pages/supervisor")
+        location.assign(window.location +`src/pages/${userDetails.role}.html`)
 
-        hisState(userDetails.id+","+userDetails.role, "/src/pages/supervisor"); 
+        hisState(userDetails.id+","+userDetails.role, `src/pages/${userDetails.role}.html`); 
     } 
     if (!token) { // else make a login
         let myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
@@ -42,18 +42,8 @@ const login = (e) => {
             sessionStorage.setItem('user_details', JSON.stringify(data.user))
             // The Origin is relative, thus defining such as a const is better
             // such for online and such for dev
-            switch (data.user.role) {
-                case 'supervisor' :
-                    // change url to relate to the specific user id
-                    return location.assign(location.origin + '/src/pages/supervisor')
-                case 'admin':
-                    return location.assign(location.origin + '/src/pages/admin');
-                case 'users': 
-                    return location.assign(location.origin + '/src/pages/intern')
-                default :
-                    return location.assign(location.origin);
-            }
-
+            console.log(data.user.role)
+            return location.assign(`${location.origin}/src/pages/${data.user.role}.html`);
         })
 }
 $loginForm.addEventListener('submit', login);
