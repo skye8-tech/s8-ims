@@ -1,4 +1,4 @@
-import { getRequest, logout, route } from './../utils.js';
+import { getRequest, logout } from './../utils.js';
 
 
 let $supervisors = document.getElementById('supervisors');

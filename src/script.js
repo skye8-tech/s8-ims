@@ -1,4 +1,5 @@
-import { postRequest, route } from "./utils.js";
+import { hisState } from "./routeUtils.js";
+import { postRequest } from "./utils.js";
 // window.addEventListener('load', e => userIn)
 
 
@@ -16,7 +17,9 @@ const userIn = e => {
     if (token && userDetails) { // Verify if user is still having the token?
         userDetails = JSON.parse(userDetails)
         console.log('niga in user')
-        route('user_details', userDetails.id, userDetails.role); 
+        location.assign(window.location +`src/pages/${userDetails.role}.html`)
+
+        hisState(userDetails.id+","+userDetails.role, `src/pages/${userDetails.role}.html`); 
     } 
     if (!token) { // else make a login
         let myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
@@ -35,10 +38,12 @@ const login = (e) => {
     }
     postRequest('login',  user)
         .then(data => {
-            console.log(data);
             sessionStorage.setItem('user_token', JSON.stringify(data.token));
             sessionStorage.setItem('user_details', JSON.stringify(data.user))
-            route('user_details', data.user.id, data.user.role);
+            // The Origin is relative, thus defining such as a const is better
+            // such for online and such for dev
+            console.log(data.user.role)
+            return location.assign(`${location.origin}/src/pages/${data.user.role}.html`);
         })
 }
 $loginForm.addEventListener('submit', login);
