@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -95,11 +95,11 @@
                 <label for="radio">Gender</label>
                 <div class="form-flex">
                     <div class="form-check form-check-inline">
-                        <input name="gender" class="form-check-input" type="radio" id="Radio1" value="option1">
+                        <input name="gender" class="form-check-input" type="radio" id="Radio1" value="Male">
                         <label class="form-check-label" for="inlineRadio1">Male</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input name="gender" class="form-check-input" type="radio"  id="Radio2" value="option2">
+                        <input name="gender" class="form-check-input" type="radio"  id="Radio2" value="Female">
                         <label class="form-check-label" for="inlineRadio2">Female</label>
                     </div>
                 </div>
@@ -153,12 +153,14 @@
           <div class="col-6">
             <div class="form">
               <label for="SelectionGrid">Level</label>
-              <select name="level" class="form-select" id="SelectionGrid">
+              <select name="level" class="form-select" id="level">
 
-                <option value="1">Level 200</option>
-                <option value="2">Level 300</option>
-                <option value="3">Level 400</option>
-                <option value="4">Others</option>
+                <option value="null">select Level</option>
+                <option value="200">Level 200</option>
+                <option value="300">Level 300</option>
+                <option value="400">Level 400</option>
+                <option value="other">Others</option>
+
 
               </select>
 
@@ -172,13 +174,13 @@
           <div class="col-6">
             <div class="form">
               <label for="SelectionGrid">Option</label>
-              <select name="specialisation" class="form-select" id="SelectionGrid">
+              <select name="specialisation" class="form-select" id="level">
 
-                <option value="1">Select field of specialization </option>
-                <option value="2">Software Development</option>
-                <option value="3">Digital Marketing</option>
-                <option value="4">Computer Networking</option>
-                <option value="5">Others</option>
+                <option value="null">Select field of specialization </option>
+                <option value="software development">Software Development</option>
+                <option value="digital marketing">Digital Marketing</option>
+                <option value="computer networking">Computer Networking</option>
+                <option value="Others">Others</option>
 
               </select>
 
@@ -192,7 +194,7 @@
             <div class="form">
               <label for="Attatchment">Attatchment(s)</label>
               <div class="input-group mb-3">
-                <input name="attachment" type="file" class="form-control" id="Attatchment" required>
+                <input name="attachment" type="file" class="form-control" id="attatchment" required>
 
               </div>
             </div>
@@ -205,7 +207,7 @@
           <div class="col-6">
             <div class="form">
               <label for="InputGrid">Start Date</label>
-              <input name="startDate" type="date" class="form-control" id="InputDate" placeholder="14-08-2022" required>
+              <input name="startDate" type="date" class="form-control" id="startDate" placeholder="14-08-2022" required>
 
             </div>
           </div>
@@ -214,12 +216,13 @@
           <div class="col-6">
             <div class="form">
               <label for="SelectionGrid">Duration</label>
-              <select class="form-select" id="SelectionGrid" required>
-                <option value="1">1 Month</option>
-                <option value="2">2 Months</option>
-                <option value="3">3 Months</option>
-                <option value="4">6 Months</option>
-                <option value="4">other</option>
+              <select class="form-select" id="duration" required>
+                <option value="">Duration</option>
+                <option value="1 month">1 Months</option>
+                <option value="2 month">2 Months</option>
+                <option value="3 month">3 Months</option>
+                <option value="6 months">6 months</option>
+                <option value="other">other</option>
               </select>
             </div>
           </div>
