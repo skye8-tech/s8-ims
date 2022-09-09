@@ -22,7 +22,10 @@ export function postRequest(resource, data) {
 }
 export function putRequest(resource, id, data) {
     if (typeof id  != "number") throw Error('The id is not accessible/not a number');
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
     return fetch(`${baseurl}/${resource}/${id}`, {
         method: 'PUT',
         mode: 'cors',
@@ -41,6 +44,7 @@ export function deleteRequest(resource) {
         headers: { 'Content-type': 'application/json'}
     }).then(res => {
         if (!res.ok) throw Error(res.statusText);
+<<<<<<< HEAD
     })
 }
 
@@ -52,11 +56,18 @@ const pathFinder = () => {
 
 
 
+=======
+        return res.json();
+    })
+}
+
+>>>>>>> main
 export function logout () {
     location.assign(location.origin)
     sessionStorage.clear();
 }
 
+<<<<<<< HEAD
 
 /** 
  * @func 
@@ -101,3 +112,5 @@ export function route(...to) {
 
 }
 
+=======
+>>>>>>> main
