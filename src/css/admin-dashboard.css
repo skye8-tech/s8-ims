@@ -5,11 +5,11 @@
 }
 
 .logo {
-    width: 6rem;
+    width: 8rem;
 }
 
 .profile-width {
-    width: 50px;
+    width: 2.5rem;
 }
 
 .admin-main {
@@ -32,8 +32,6 @@ a.user-link {
 
 .user-link:hover {
     color: #0d6dfd70;
-    padding-bottom: 1.5px;
-    border-bottom: 1px solid #0074d955;
     transition-duration: .3s;
 }
 
@@ -51,10 +49,26 @@ hr {
     font-size: .8rem;
 }
 
-/* .bg-transparent {
-    background-color: #f0f8ff !important;
-} */
+.size-img{
+    width: 5rem !important;
+}
+full-screen-h-w{
+    height: calc(100vh - 66px);
+}
 
 .n-border{
     border: none;
 }
+
+.over-flow-left{
+    overflow-y: scroll;
+    height: calc(100vh - 66px);
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /*
+/* body{
+    height: 100vh;
+    background: linear-gradient(#0D6EFD 50%, #fafafa 50%);
+    background-repeat: no-repeat;
+} */
