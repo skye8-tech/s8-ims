@@ -1,5 +1,6 @@
 // import getRequest from '../script';
 
+
 let $userCard = document.getElementById('user-card');
 // let div = document.createElement('div');
 // ****** Get users

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Notifications</title>
+    
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- My External CSS only -->
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+    <link rel="stylesheet" href="../css/admin-profile.css">
+    <link rel="stylesheet" href="../css/admin-notifications.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.css" integrity="sha256-NAxhqDvtY0l4xn+YVa6WjAcmd94NNfttjNsDmNatFVc=" crossorigin="anonymous" />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  
+</head>
+<body class="admin-main h-100vh">
+
+    <!-- The Admins Navigation Bar -->
+    <nav class="navbar navbar-light navbar-expand-md bg-primary d-flex justify-content-between">
+        <div class="container-fluid">
+            <div class="d-flex flex-row justify-content-between align-items-center"><img src="../../assets/images/logo.png" class="img-fluid pe-3 logo"></div>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="margin-left: 0;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <form class="navbar-left">
+                    <div class="input-group">
+                        <div class="input-group"><input class="bg-light form-control form-control-sm border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-outline-light py-0" type="button"><i class="bi bi-search"></i></button></div>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active fs-4 text-center text-light" href="../pages/admin-dashboard.html"><strong><span>ADMINISTRATOR</span></strong></a></li>
+                </ul>
+                <ul class="navbar-nav d-flex align-items-center ms-auto">
+                    <li class="nav-item dropdown no-arrow">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline text-light fs-6 me-2 text-gray-100 small"><strong>Tita Tera</strong></span><img class="border rounded-circle img-profile profile-width" src="../../assets/images/niga-profile.png"></a>
+                            <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                                <a class="dropdown-item" href="../pages/admin-profile.html"><i class="bi bi-person-fill bi-sm bi-bw me-2 text-gray-400"></i>Profile</a>
+                                <a class="dropdown-item" href="../pages/feedback.html"><i class="bi bi-person-workspace bi-sm bi-bw me-2 text-gray-400"></i>Feedback</a>
+                                <a class="dropdown-item" href="../pages/app-file.html"><i class="bi bi-person-lines-fill bi-sm bi-bw me-2 text-gray-400"></i>Applications</a>
+                                <a class="dropdown-item" href="../pages/add-sup.html"><i class="bi bi-person-plus-fill bi-sm bi-bw me-2 text-gray-400"></i>Add Supervisor</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-danger fw-bold" href="../../index.html"><i class="bi bi-arrow-up-right-circle bi-sm bi-bw me-2 text-danger fw-bold"></i>Logout</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+
+
+    <div class="container pt-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm rounded bg-white mb-3">
+                        <div class="card-title border-bottom p-3">
+                            <h6 class="m-0">Feedbacks</h6>
+                        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <img class="rounded-circle dropdown-list-image me-4" src="../../assets/images/niga-profile.png">
+                                    <div class="fw-bold">James Washington</div>
+                                </button>
+                                </h2>
+                                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body small">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum recusandae vel, omnis optio neque hic ducimus quisquam sint possimus aut.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    <img class="rounded-circle dropdown-list-image me-4" src="../../assets/images/niga-profile.png">
+                                    <div class="fw-bold">James Washington</div>
+                                </button>
+                                </h2>
+                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem temporibus repudiandae molestiae quam, culpa necessitatibus eius quo sunt assumenda natus.</div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <template id="user-card">
+      <div class="col align-admins">
+        <img id="user-img" class="rounded-circle size-img">
+        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+      </div>
+    </template> -->
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-profile.js"></script>
+</body>
+</html>
