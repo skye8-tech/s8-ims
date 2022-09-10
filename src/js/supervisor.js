@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+import { logout } from "../utils.js";
+
+document.querySelector('[data-logout]').addEventListener('click', logout);
+=======
 import { hisState, redirect } from "../routeUtils.js";
 import { getRequest, logout } from "../utils.js";
 
@@ -96,3 +101,4 @@ window.addEventListener("popstate", (event) => {
   if (!event.state) loadSupervisor();
   else loadInternDetails(event.state);
 });
+>>>>>>> main

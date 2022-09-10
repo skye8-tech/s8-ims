@@ -3,6 +3,7 @@ body{
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
+    min-width: 300px;
 }
 .h1{
     margin-top:50px;
