@@ -1,29 +1,44 @@
-import { route } from "../utils";
-
-
-
 'use strict'
+//import postRequest function from utils.js
+import { postRequest } from "../utils.js";
 
+// Declaration of variables
+let id = JSON.parse(sessionStorage.getItem('user_details')).id;
+const $logbook = document.querySelector('#form1');
 
-// // Disable form submissions if there are invalid fields
-// const $weekBtn = document.querySelector('.id-archive');
-// let $currentWeek = document.querySelector('.id-active');
-// let $weekTitle = document.querySelector('#Week-title');
+//New form data to hold users input data from logbook
+const form1data = {};
 
-// const clickWeekHandler = (e) => {
-//     e.target.classList.toggle('id-active');
-//     $currentWeek.classList.toggle('id-active');
-//     $weekTitle.textContent = e.target.textContent;
-//     $currentWeek = e.target; // keep track of the current element.
-// }
-// $weekBtn.addEventListener('click', e => {clickWeekHandler(e)})
+//Saveform1Data function saves all user input in a particular format
+const saveform1Data = () => {
+    form1data['userid']= id,
+    form1data['content'] = $logbook.content.value,
+    form1data['date'] = $logbook.date.value; 
+}
+// Method to save form data and poston end point
+$logbook.addEventListener('submit', (e) => {
+    e.preventDefault(); 
+    saveform1Data();
 
+    console.log(form1data)
+    postRequest(`logbooks/${id}`, form1data) //Post request 
+    .then(res => {
+      console.log(res)
+    })
+   //loogbook refreshes on submit
+    document.forms[0].reset();
 
-// Modal activation after validation
-const regform = document.getElementById('regform')
-regform.addEventListener('submit', function(e){
-    let myModal = new bootstrap.Modal(document.getElementById("staticBackdrop"), {});
-    e.preventDefault();
-    myModal.toggle();
-    
 })
+
+
+
+
+
+
+     
+
+
+
+
+
+

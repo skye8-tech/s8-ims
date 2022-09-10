@@ -295,13 +295,18 @@
         </section>
  </div>
 
-
-    <!-- <template id="user-card">
-      <div class="col align-admins">
-        <img id="user-img" class="rounded-circle size-img">
-        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+    <template id="interns-department-template">
+      <div>
+        <div><h5 class="my-4" data-dep-title>Software Engineers</h5></div>
+        <div class="d-flex gap-4 flex-wrap" id="internsSw" data-dep-list></div>
       </div>
-    </template> -->
-    <script src="../js/admin.js"></script>
+    </template>
+    <template id="card-template">
+      <div class="col align-admins" data-user-clickable>
+        <img id="user-img" class="rounded-circle size-img" data-user-img>
+        <a href="#" class="user-link d-flex justify-content-center" id="user-link" data-user-name></a>
+      </div>
+    </template>
+    <script type="module" src="../js/admin.js"></script>
 </body>
 </html>
