@@ -13,11 +13,12 @@
 .textarea{
     background-color: #ffffff;
     padding: 1em;
-    /*border-radius: 15px;*/
     border: 2px solid transparent;
     outline: none;
     height: 260px !important;
     width: 600px;
+    max-width: 100%;
+    resize: none;
     line-height: 1.4;
     font-size: 16px;
     justify-self: center;
@@ -52,6 +53,8 @@ textarea:hover{
     font-size: 16px;
     transition: all 0.2s;
     justify-self: center;
+    max-width: 100%;
+    resize: none ;
     
 }
 
