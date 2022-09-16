@@ -50,7 +50,7 @@
             <div class="row">
               <div class="col">
                 <!-- logbook section -->
-                <div class="container-fluid px-5 over-flow-left">
+                <div class="container-fluid px-5 ">
                   <div class="container shadow mb-3 ">
                     <h3 class="text-left my-4">LogBook</h3>
                     <!-- Date -->
@@ -61,7 +61,14 @@
                           <input type="date" id="date" class="form-control" name="date">
                         </div>
                       </div>
-                      <textarea class="textarea shadow-sm " placeholder="Enter message....." name="logbook" id="content" value="text" ></textarea>
+                      <div class="row">
+                        <div class="col">
+                          <div>
+                            <textarea class="textarea shadow-sm " placeholder="Enter message....." name="logbook" id="content" value="text" ></textarea>
+                          </div>
+
+                        </div>
+                      </div>
                       <div class="d-flex">
                         <button type="submit" class="btn btn-primary mx-auto shadow m-2 mb-3 w-23" id="save" name="save">Save</button>
                       </div>
