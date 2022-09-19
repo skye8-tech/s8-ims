@@ -1,6 +1,6 @@
-.dropdown-menu {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+.dropdown-menu-move {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
     top: 100% !important;
 }
 

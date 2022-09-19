@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applications</title>
+    
+    <!-- Bootstrap CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
+    <!-- My External CSS only -->
+    <link rel="stylesheet" href="../css/admin-dashboard.css">
+    <link rel="stylesheet" href="../css/admin-profile.css">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous" defer></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  
+</head>
+<body class="admin-main h-100vh">
+
+  <!-- The Admins Navigation Bar -->
+  <nav class="navbar navbar-light navbar-expand-md bg-primary d-flex justify-content-between">
+    <div class="container-fluid">
+        <div class="d-flex flex-row justify-content-between align-items-center"><img src="../../assets/images/logo.png" class="img-fluid pe-3 logo"></div>
+        <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="margin-left: 0;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+            <form class="navbar-left">
+                <div class="input-group">
+                    <div class="input-group"><input class="bg-light form-control form-control-sm border-0 small" type="text" placeholder="Search for ..."><button class="btn btn-outline-light py-0" type="button"><i class="bi bi-search"></i></button></div>
+                </div>
+            </form>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active fs-4 text-center text-light" href="../pages/admin-dashboard.html"><strong><span>ADMINISTRATOR</span></strong></a></li>
+            </ul>
+            <ul class="navbar-nav d-flex align-items-center ms-auto">
+                <li class="nav-item dropdown no-arrow">
+                    <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline text-light fs-6 me-2 text-gray-100 small"><strong>Tita Tera</strong></span><img class="border rounded-circle img-profile profile-width" src="../../assets/images/niga-profile.png"></a>
+                        <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in">
+                            <a class="dropdown-item" href="../pages/admin-profile.html"><i class="bi bi-person-fill bi-sm bi-bw me-2 text-gray-400"></i>Profile</a>
+                            <a class="dropdown-item" href="../pages/feedback.html"><i class="bi bi-person-workspace bi-sm bi-bw me-2 text-gray-400"></i>Feedback</a>
+                            <a class="dropdown-item" href="../pages/app-file.html"><i class="bi bi-person-lines-fill bi-sm bi-bw me-2 text-gray-400"></i>Applications</a>
+                            <a class="dropdown-item" href="../pages/add-sup.html"><i class="bi bi-person-plus-fill bi-sm bi-bw me-2 text-gray-400"></i>Add Supervisor</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger fw-bold" href="../../index.html"><i class="bi bi-arrow-up-right-circle bi-sm bi-bw me-2 text-danger fw-bold"></i>Logout</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+<!-- <div class="bg-light mb-3">
+  <div class="fs-6">
+    <nav class="nav nav-borders">
+      <a class="nav-link active ms-0" href="../pages/admin-dashboard.html" target="__blank">Dashboard</a>
+      <a class="nav-link" href="../pages/admin-profile.html" target="__blank">Profile</a>
+      <a class="nav-link" href="../pages/admin-notificatoins"  target="__blank">Notifications</a>
+    </nav>
+  </div>
+</div> -->
+
+   <div class="admin-main">
+      <div class="container-xl px-4 mt-4">
+        <div class="row">
+            <div class="col-xl-12">
+                <!-- Personal Info Card-->
+                <div class="card mb-4">
+                    <div class="card-header">Personal Information</div>
+                    <div class="card-body">
+                        <form>
+                            <div class="row gx-3 gy-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="form-control">Tita Tera Tekwe</label>
+                                </div>
+                                <!-- Form Group (address)-->
+                                <label class="col-md-6">
+                                    <label class="form-control">Up Station Bamenda N.W Cameroon</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">titatera125@gmail.com</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">670527656</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">Male</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">Up Station Bamenda N.W Cameroon</label>
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Required Info Card-->
+                <div class="card mb-4">
+                    <div class="card-header">Required Information</div>
+                    <div class="card-body">
+                        <form>
+                            <!-- Required Information-->
+                            <div class="row gx-3 gy-3 mb-3">
+                                <!-- Form Group (first name)-->
+                                <div class="col-md-6">
+                                    <label class="form-control">University of Bamenda</label>
+                                </div>
+                                <!-- Form Group (address)-->
+                                <label class="col-md-6">
+                                    <label class="form-control">Faculty of Science</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">level <span>200</span></label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">Software Engineering</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">Attachment</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">05/07/2022</label>
+                                </label>
+                                <label class="col-md-6">
+                                    <label class="form-control">1 Month Duration</label>
+                                </label>
+                            </div>
+                            <!-- Approve Reject button-->
+                            <div class="d-flex justify-content-evenly gap-4">
+                                <button class="btn btn-success" type="button">Approve</button>
+                                <button class="btn btn-danger" type="button">Reject</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+
+    <!-- <template id="user-card">
+      <div class="col align-admins">
+        <img id="user-img" class="rounded-circle size-img">
+        <a href="#" class="user-link d-flex justify-content-center" id="user-link"></a>
+      </div>
+    </template> -->
+    <script src="../js/admin.js"></script>
+    <script src="../js/admin-profile.js"></script>
+</body>
+</html>
