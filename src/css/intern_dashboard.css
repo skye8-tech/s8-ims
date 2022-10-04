@@ -13,11 +13,12 @@
 .textarea{
     background-color: #ffffff;
     padding: 1em;
-    /*border-radius: 15px;*/
     border: 2px solid transparent;
     outline: none;
     height: 260px !important;
     width: 600px;
+    max-width: 100%;
+    resize: none;
     line-height: 1.4;
     font-size: 16px;
     justify-self: center;
@@ -35,6 +36,89 @@ textarea:hover{
     margin-right: 30%;
 }
 
+.attendance{
+    justify-content: center;
+    /* margin-left: 40%; */
+}
+.calendar{
+    display: flex;
+    border-radius: 20px;
+    height: 80px;
+    /* width: 400px; */
+   
+    justify-content: center;
+    text-align: center;
+    
+}
+.calendar ul{
+    display: flex;
+    /* width: 500px; */
+    /* justify-content: center;
+    align-items: center; */
+}
+.calendar ul li{
+    position: relative;
+    list-style: none;
+    resize: none;
+    width: 45px;
+    height: 70px;
+    top: 20px;
+    z-index: 1;
+}
+.calendar ul li a{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    top: 25px;
+    
+}
+.calendar ul li a span.text{
+    position: absolute;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    justify-items: center;
+    font-size: 1em;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    /* background: #6d9aef; */
+    /* border-style: outset ; */
+    outline-style: auto;
+    outline-color: #0b5ed7;
+    transition: 0.5s;
+} 
+.calendar ul li:hover a span.text {
+    transform: translateY(-25px);
+    position: absolute;
+    background: #0b5ed7;
+    opacity: 2;
+   
+} 
+.calendar ul li a span.title{
+    position: absolute;
+    color: rgb(33, 31, 31);
+    font-weight: 400;
+    font-size: 1em;
+    justify-content: flex-start;
+    text-align: start;
+   visibility: hidden;
+   transition: 0.5s;
+} 
+.calendar ul li:hover a span.title{
+    opacity: 4;
+    transform: translateY(25px);
+    visibility: visible;
+}
+.signin{
+   max-width: 100%;
+   resize: none;
+   margin-left: 47%;
+}
+
 .review{
     height: 10vh;
     width: 40%;
@@ -50,8 +134,11 @@ textarea:hover{
     width: 500px;
     line-height: 1.4;
     font-size: 16px;
-    transition: all 0.2s;
     justify-self: center;
+    max-width: 100%;
+    resize: none ;
+    transition: all 0.2s;
+   
     
 }
 

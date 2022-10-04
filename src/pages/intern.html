@@ -50,7 +50,7 @@
             <div class="row">
               <div class="col">
                 <!-- logbook section -->
-                <div class="container-fluid px-5 over-flow-left">
+                <div class="container-fluid px-5 ">
                   <div class="container shadow mb-3 ">
                     <h3 class="text-left my-4">LogBook</h3>
                     <!-- Date -->
@@ -61,7 +61,14 @@
                           <input type="date" id="date" class="form-control" name="date">
                         </div>
                       </div>
-                      <textarea class="textarea shadow-sm " placeholder="Enter message....." name="logbook" id="content" value="text" ></textarea>
+                      <div class="row">
+                        <div class="col">
+                          <div>
+                            <textarea class="textarea shadow-sm " placeholder="Enter message....." name="logbook" id="content" value="text" ></textarea>
+                          </div>
+
+                        </div>
+                      </div>
                       <div class="d-flex">
                         <button type="submit" class="btn btn-primary mx-auto shadow m-2 mb-3 w-23" id="save" name="save">Save</button>
                       </div>
@@ -98,7 +105,61 @@
                   </div>-->
                 </div>
               </div>
+              <div class="row">
+                <div class="col mb-3">
+                  <div class="calendar">
+                    <ul>
+                        <li class="list"> 
+                            <a>
+                                <span class="text">M</span>
+                                <span class="title">Monday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a>
+                                <span class="text">T</span>
+                                <span class="title">Tuesday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a>
+                                <span class="text">W</span>
+                                <span class="title">Wednesday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a>
+                                <span class="text">T</span>
+                                <span class="title">Thursday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <span class="text">F</span>
+                                <span class="title">Friday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a>
+                                <span class="text">S</span>
+                                <span class="title">Saturday</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a>
+                                <span class="text">S</span>
+                                <span class="title">Sunday</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col signin">
+                  <button class="btn btn-primary">Signin</button>
+                </div>
+                </div>
+              </div>
             </div>
+           
              <!-- Project/Task section -->
             <div class="container-fluid col-12 col-sm-5 bg-white p-0">
               <div class="container-fluid py-3">
@@ -202,6 +263,6 @@
         </div>
       </section>                
              
-    <script type="module" src="../js/interns.js"></script>  -->
+    <script type="module" src="../js/interns.js"></script> 
   </body>
 </html> 
